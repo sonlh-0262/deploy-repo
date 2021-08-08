@@ -65,6 +65,10 @@ sudo apt-get install libmysqlclient-dev -y
 # If to want to deploy in localhost server, 
 copy `.ssh/id_rsa.pub` to `authorized_keys`
 
+# Create shared file in folder deploy-repo/config
+database.yml
+master.key # It is copied from origin repo
+
 # Run cap
 cap production deploy
 
