@@ -1,0 +1,1369 @@
+# Logfile created on 2021-08-08 15:03:58 +0000 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:03:58 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [46ea6b25] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [46ea6b25] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:04:41 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [49a0dfda] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [49a0dfda] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:11:15 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e58d126d] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [e58d126d] Command: [ -d ~/.rvm ]
+ DEBUG [e58d126d] Finished in 1.136 seconds with exit status 0 (successful).
+ DEBUG [b3c3c50f] Running ~/.rvm/bin/rvm version as deploy@localhost
+ DEBUG [b3c3c50f] Command: ~/.rvm/bin/rvm version
+ DEBUG [b3c3c50f] 	rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [b3c3c50f] 	
+ DEBUG [b3c3c50f] Finished in 0.189 seconds with exit status 0 (successful).
+ DEBUG [c4e333ec] Running ~/.rvm/bin/rvm current as deploy@localhost
+ DEBUG [c4e333ec] Command: ~/.rvm/bin/rvm current
+ DEBUG [c4e333ec] 	ruby-2.6.6
+ DEBUG [c4e333ec] 	
+ DEBUG [c4e333ec] Finished in 0.182 seconds with exit status 0 (successful).
+ DEBUG [27a09666] Running ~/.rvm/bin/rvm default do ruby --version as deploy@localhost
+ DEBUG [27a09666] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [27a09666] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [27a09666] 	
+ DEBUG [27a09666] Finished in 0.372 seconds with exit status 0 (successful).
+  INFO [9d759e16] Running /usr/bin/env mkdir -p /tmp as deploy@localhost
+ DEBUG [9d759e16] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9d759e16] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7aca43ad54ddc760e738.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7aca43ad54ddc760e738.sh 100.0%
+  INFO [ed3eb8ad] Running /usr/bin/env chmod 700 /tmp/git-ssh-7aca43ad54ddc760e738.sh as deploy@localhost
+ DEBUG [ed3eb8ad] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7aca43ad54ddc760e738.sh
+  INFO [ed3eb8ad] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [3d76a3ac] Running /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD as deploy@localhost
+ DEBUG [3d76a3ac] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7aca43ad54ddc760e738.sh" ; /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD )
+ DEBUG [3d76a3ac] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [3d76a3ac] 		HEAD
+  INFO [3d76a3ac] Finished in 2.429 seconds with exit status 0 (successful).
+  INFO [430934a8] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases as deploy@localhost
+ DEBUG [430934a8] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases
+  INFO [430934a8] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [2b612184] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system as deploy@localhost
+ DEBUG [2b612184] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system
+  INFO [2b612184] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [536e30d7] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config as deploy@localhost
+ DEBUG [536e30d7] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config
+  INFO [536e30d7] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [b2cafdd8] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [b2cafdd8] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [b2cafdd8] Finished in 0.047 seconds with exit status 1 (failed).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:12:37 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c362d43b] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [c362d43b] Command: [ -d ~/.rvm ]
+ DEBUG [c362d43b] Finished in 0.614 seconds with exit status 0 (successful).
+ DEBUG [bf1bc0aa] Running ~/.rvm/bin/rvm version as deploy@localhost
+ DEBUG [bf1bc0aa] Command: ~/.rvm/bin/rvm version
+ DEBUG [bf1bc0aa] 	rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [bf1bc0aa] 	
+ DEBUG [bf1bc0aa] Finished in 0.191 seconds with exit status 0 (successful).
+ DEBUG [37e81fb2] Running ~/.rvm/bin/rvm current as deploy@localhost
+ DEBUG [37e81fb2] Command: ~/.rvm/bin/rvm current
+ DEBUG [37e81fb2] 	ruby-2.6.6
+ DEBUG [37e81fb2] 	
+ DEBUG [37e81fb2] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [f8db1861] Running ~/.rvm/bin/rvm default do ruby --version as deploy@localhost
+ DEBUG [f8db1861] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [f8db1861] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [f8db1861] 	
+ DEBUG [f8db1861] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [228769ee] Running /usr/bin/env mkdir -p /tmp as deploy@localhost
+ DEBUG [228769ee] Command: /usr/bin/env mkdir -p /tmp
+  INFO [228769ee] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-472c17e7e234f9ca50f9.sh 0.0%
+  INFO Uploading /tmp/git-ssh-472c17e7e234f9ca50f9.sh 100.0%
+  INFO [829dcbdf] Running /usr/bin/env chmod 700 /tmp/git-ssh-472c17e7e234f9ca50f9.sh as deploy@localhost
+ DEBUG [829dcbdf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-472c17e7e234f9ca50f9.sh
+  INFO [829dcbdf] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [2c697506] Running /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD as deploy@localhost
+ DEBUG [2c697506] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-472c17e7e234f9ca50f9.sh" ; /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD )
+ DEBUG [2c697506] 	Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.
+ DEBUG [2c697506] 	
+ DEBUG [2c697506] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [2c697506] 		HEAD
+  INFO [2c697506] Finished in 2.313 seconds with exit status 0 (successful).
+  INFO [dfed1ab6] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases as deploy@localhost
+ DEBUG [dfed1ab6] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases
+  INFO [dfed1ab6] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [bc593335] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system as deploy@localhost
+ DEBUG [bc593335] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system
+  INFO [bc593335] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [f1494f08] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config as deploy@localhost
+ DEBUG [f1494f08] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config
+  INFO [f1494f08] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [5b764f52] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [5b764f52] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [5b764f52] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG Uploading config/master.key 0.0%
+  INFO Uploading config/master.key 100.0%
+ DEBUG [314b8d07] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [314b8d07] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [314b8d07] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:19:59 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [024b94ba] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [024b94ba] Command: [ -d ~/.rvm ]
+ DEBUG [024b94ba] Finished in 0.564 seconds with exit status 0 (successful).
+ DEBUG [b713880b] Running ~/.rvm/bin/rvm version as deploy@localhost
+ DEBUG [b713880b] Command: ~/.rvm/bin/rvm version
+ DEBUG [b713880b] 	rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [b713880b] 	
+ DEBUG [b713880b] Finished in 0.190 seconds with exit status 0 (successful).
+ DEBUG [d88be709] Running ~/.rvm/bin/rvm current as deploy@localhost
+ DEBUG [d88be709] Command: ~/.rvm/bin/rvm current
+ DEBUG [d88be709] 	ruby-2.6.6
+ DEBUG [d88be709] 	
+ DEBUG [d88be709] Finished in 0.181 seconds with exit status 0 (successful).
+ DEBUG [ff195b92] Running ~/.rvm/bin/rvm default do ruby --version as deploy@localhost
+ DEBUG [ff195b92] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [ff195b92] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [ff195b92] 	
+ DEBUG [ff195b92] Finished in 0.364 seconds with exit status 0 (successful).
+  INFO [94e30b80] Running /usr/bin/env mkdir -p /tmp as deploy@localhost
+ DEBUG [94e30b80] Command: /usr/bin/env mkdir -p /tmp
+  INFO [94e30b80] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-762603a8179f527c3b8a.sh 0.0%
+  INFO Uploading /tmp/git-ssh-762603a8179f527c3b8a.sh 100.0%
+  INFO [88b45a03] Running /usr/bin/env chmod 700 /tmp/git-ssh-762603a8179f527c3b8a.sh as deploy@localhost
+ DEBUG [88b45a03] Command: /usr/bin/env chmod 700 /tmp/git-ssh-762603a8179f527c3b8a.sh
+  INFO [88b45a03] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [aef92d53] Running /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD as deploy@localhost
+ DEBUG [aef92d53] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD )
+ DEBUG [aef92d53] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [aef92d53] 		HEAD
+  INFO [aef92d53] Finished in 3.051 seconds with exit status 0 (successful).
+  INFO [b6826566] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases as deploy@localhost
+ DEBUG [b6826566] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases
+  INFO [b6826566] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [c4323b7a] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system as deploy@localhost
+ DEBUG [c4323b7a] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system
+  INFO [c4323b7a] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [3e750b63] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config as deploy@localhost
+ DEBUG [3e750b63] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config
+  INFO [3e750b63] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [cd85d436] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [cd85d436] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [cd85d436] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [58ab3ee8] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [58ab3ee8] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [58ab3ee8] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG Uploading config/database.yml 0.0%
+  INFO Uploading config/database.yml 100.0%
+ DEBUG [9b14808d] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [9b14808d] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [9b14808d] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [91036327] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [91036327] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [91036327] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [3a4722ee] Running [ -f /home/deploy/apps/rails-api-demo/shared/puma.rb ] as deploy@localhost
+ DEBUG [3a4722ee] Command: [ -f /home/deploy/apps/rails-api-demo/shared/puma.rb ]
+ DEBUG [3a4722ee] Finished in 0.004 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/deploy/apps/rails-api-demo/shared/puma.rb 0.0%
+  INFO Uploading /home/deploy/apps/rails-api-demo/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [d291e74c] Running [ -f /home/deploy/apps/rails-api-demo/current/REVISION ] as deploy@localhost
+ DEBUG [d291e74c] Command: [ -f /home/deploy/apps/rails-api-demo/current/REVISION ]
+ DEBUG [d291e74c] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [7c6aaef5] Running [ -f /home/deploy/apps/rails-api-demo/repo/HEAD ] as deploy@localhost
+ DEBUG [7c6aaef5] Command: [ -f /home/deploy/apps/rails-api-demo/repo/HEAD ]
+ DEBUG [7c6aaef5] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [3c2315f4] Running if test ! -d /home/deploy/apps/rails-api-demo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [3c2315f4] Command: if test ! -d /home/deploy/apps/rails-api-demo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo'" 1>&2; false; fi
+ DEBUG [3c2315f4] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [efe7afad] Running /usr/bin/env git clone --mirror git@github.com:sonlh-0262/rails-api-demo.git /home/deploy/apps/rails-api-demo/repo as deploy@localhost
+ DEBUG [efe7afad] Command: cd /home/deploy/apps/rails-api-demo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env git clone --mirror git@github.com:sonlh-0262/rails-api-demo.git /home/deploy/apps/rails-api-demo/repo )
+ DEBUG [efe7afad] 	Cloning into bare repository '/home/deploy/apps/rails-api-demo/repo'...
+ DEBUG [efe7afad] 	
+ DEBUG [efe7afad] 	remote: Enumerating objects: 245, done.[K
+ DEBUG [efe7afad] 	
+ DEBUG [efe7afad] 	remote: Counting objects:   0% (1/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   1% (3/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   2% (5/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   3% (8/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   4% (10/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   5% (13/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   6% (15/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   7% (18/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   8% (20/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:   9% (23/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  10% (25/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  11% (27/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  12% (30/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  13% (32/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  14% (35/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  15% (37/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  16% (40/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  17% (42/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  18% (45/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  19% (47/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  20% (49/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  21% (52/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  22% (54/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  23% (57/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  24% (59/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  25% (62/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  26% (64/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  27% (67/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  28% (69/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  29% (72/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  30% (74/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  31% (76/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  32% (79/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  33% (81/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  34% (84/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  35% (86/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  36% (89/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  37% (91/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  38% (94/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  39% (96/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  40% (98/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  41% (101/245)[Kremote: Counting objects:  42% (103/245)[Kremote: Counting objects:  43% (106/245)[Kremote: Counting objects:  44% (108/245)[Kremote: Counting objects:  45% (111/245)[Kremote: Counting objects:  46% (113/245)[Kremote: Counting objects:  47% (116/245)[Kremote: Counting objects:  48% (118/245)[Kremote: Counting objects:  49% (121/245)[Kremote: Counting objects:  50% (123/245)[Kremote: Counting objects:  51% (125/245)[Kremote: Counting objects:  52% (128/245)[Kremote: Counting objects:  53% (130/245)[Kremote: Counting objects:  54% (133/245)[Kremote: Counting objects:  55% (135/245)[Kremote: Counting objects:  56% (138/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  57% (140/245)[Kremote: Counting objects:  58% (143/245)[Kremote: Counting objects:  59% (145/245)[Kremote: Counting objects:  60% (147/245)[Kremote: Counting objects:  61% (150/245)[Kremote: Counting objects:  62% (152/245)[Kremote: Counting objects:  63% (155/245)[Kremote: Counting objects:  64% (157/245)[Kremote: Counting objects:  65% (160/245)[Kremote: Counting objects:  66% (162/245)[Kremote: Counting objects:  67% (165/245)[Kremote: Counting objects:  68% (167/245)[Kremote: Counting objects:  69% (170/245)[Kremote: Counting objects:  70% (172/245)[Kremote: Counting objects:  71% (174/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  72% (177/245)[Kremote: Counting objects:  73% (179/245)[Kremote: Counting objects:  74% (182/245)[Kremote: Counting objects:  75% (184/245)[Kremote: Counting objects:  76% (187/245)[Kremote: Counting objects:  77% (189/245)[Kremote: Counting objects:  78% (192/245)[Kremote: Counting objects:  79% (194/245)[Kremote: Counting objects:  80% (196/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  81% (199/245)[Kremote: Counting objects:  82% (201/245)[Kremote: Counting objects:  83% (204/245)[Kremote: Counting objects:  84% (206/245)[Kremote: Counting objects:  85% (209/245)[Kremote: Counting objects:  86% (211/245)[Kremote: Counting objects:  87% (214/245)[Kremote: Counting objects:  88% (216/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  89% (219/245)[Kremote: Counting objects:  90% (221/245)[Kremote: Counting objects:  91% (223/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  92% (226/245)[K
+ DEBUG [efe7afad] 	remote: Counting objects:  93% (228/245)[Kremote: Counting objects:  94% (231/245)[Kremote: Counting objects:  95% (233/245)[Kremote: Counting objects:  96% (236/245)[Kremote: Counting objects:  97% (238/245)[Kremote: Counting objects:  98% (241/245)[Kremote: Counting objects:  99% (243/245)[Kremote: Counting objects: 100% (245/245)[Kremote: Counting objects: 100% (245/245), done.[K
+ DEBUG [efe7afad] 	
+remote: Compressing objects:   0% (1/156)[Kremote: Compressing objects:   1% (2/156)[Kremote: Compressing objects:   2% (4/156)[Kremote: Compressing objects:   3% (5/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:   4% (7/156)[Kremote: Compressing objects:   5% (8/156)[Kremote: Compressing objects:   6% (10/156)[Kremote: Compressing objects:   7% (11/156)[Kremote: Compressing objects:   8% (13/156)[Kremote: Compressing objects:   9% (15/156)[Kremote: Compressing objects:  10% (16/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  11% (18/156)[Kremote: Compressing objects:  12% (19/156)[Kremote: Compressing objects:  13% (21/156)[Kremote: Compressing objects:  14% (22/156)[Kremote: Compressing objects:  15% (24/156)[Kremote: Compressing objects:  16% (25/156)[Kremote: Compressing objects:  17% (27/156)[Kremote: Compressing objects:  18% (29/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  19% (30/156)[Kremote: Compressing objects:  20% (32/156)[Kremote: Compressing objects:  21% (33/156)[Kremote: Compressing objects:  22% (35/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  23% (36/156)[Kremote: Compressing objects:  24% (38/156)[Kremote: Compressing objects:  25% (39/156)[Kremote: Compressing objects:  26% (41/156)[Kremote: Compressing objects:  27% (43/156)[Kremote: Compressing objects:  28% (44/156)[Kremote: Compressing objects:  29% (46/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  30% (47/156)[Kremote: Compressing objects:  31% (49/156)[Kremote: Compressing objects:  32% (50/156)[Kremote: Compressing objects:  33% (52/156)[Kremote: Compressing objects:  34% (54/156)[Kremote: Compressing objects:  35% (55/156)[Kremote: Compressing objects:  36% (57/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  37% (58/156)[Kremote: Compressing objects:  38% (60/156)[Kremote: Compressing objects:  39% (61/156)[Kremote: Compressing objects:  40% (63/156)[Kremote: Compressing objects:  41% (64/156)[Kremote: Compressing objects:  42% (66/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  43% (68/156)[Kremote: Compressing objects:  44% (69/156)[Kremote: Compressing objects:  45% (71/156)[Kremote: Compressing objects:  46% (72/156)[Kremote: Compressing objects:  47% (74/156)[Kremote: Compressing objects:  48% (75/156)[Kremote: Compressing objects:  49% (77/156)[Kremote: Compressing objects:  50% (78/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  51% (80/156)[Kremote: Compressing objects:  52% (82/156)[Kremote: Compressing objects:  53% (83/156)[Kremote: Compressing objects:  54% (85/156)[Kremote: Compressing objects:  55% (86/156)[Kremote: Compressing objects:  56% (88/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  57% (89/156)[Kremote: Compressing objects:  58% (91/156)[Kremote: Compressing objects:  59% (93/156)[Kremote: Compressing objects:  60% (94/156)[Kremote: Compressing objects:  61% (96/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  62% (97/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  63% (99/156)[Kremote: Compressing objects:  64% (100/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  65% (102/156)[Kremote: Compressing objects:  66% (103/156)[Kremote: Compressing objects:  67% (105/156)[Kremote: Compressing objects:  68% (107/156)[Kremote: Compressing objects:  69% (108/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  70% (110/156)[Kremote: Compressing objects:  71% (111/156)[Kremote: Compressing objects:  72% (113/156)[Kremote: Compressing objects:  73% (114/156)[Kremote: Compressing objects:  74% (116/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  75% (117/156)[Kremote: Compressing objects:  76% (119/156)[Kremote: Compressing objects:  77% (121/156)[Kremote: Compressing objects:  78% (122/156)[Kremote: Compressing objects:  79% (124/156)[Kremote: Compressing objects:  80% (125/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  81% (127/156)[Kremote: Compressing objects:  82% (128/156)[Kremote: Compressing objects:  83% (130/156)[Kremote: Compressing objects:  84% (132/156)[Kremote: Compressing objects:  85% (133/156)[Kremote: Compressing objects:  86% (135/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  87% (136/156)[Kremote: Compressing objects:  88% (138/156)[Kremote: Compressing objects:  89% (139/156)[Kremote: Compressing objects:  90% (141/156)[Kremote: Compressing objects:  91% (142/156)[Kremote: Compressing objects:  92% (144/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  93% (146/156)[Kremote: Compressing objects:  94% (147/156)[Kremote: Compressing objects:  95% (149/156)[Kremote: Compressing objects:  96% (150/156)[Kremote: Compressing objects:  97% (152/156)[K
+ DEBUG [efe7afad] 	remote: Compressing objects:  98% (153/156)[Kremote: Compressing objects:  99% (155/156)[Kremote: Compressing objects: 100% (156/156)[Kremote: Compressing objects: 100% (156/156), done.[K
+ DEBUG [efe7afad] 	Receiving objects:   0% (1/245)   
+ DEBUG [efe7afad] 	Receiving objects:   1% (3/245)   
+ DEBUG [efe7afad] 	Receiving objects:   2% (5/245)   
+ DEBUG [efe7afad] 	Receiving objects:   3% (8/245)   
+ DEBUG [efe7afad] 	Receiving objects:   4% (10/245)   
+ DEBUG [efe7afad] 	Receiving objects:   5% (13/245)   
+ DEBUG [efe7afad] 	Receiving objects:   6% (15/245)   
+ DEBUG [efe7afad] 	Receiving objects:   7% (18/245)   
+ DEBUG [efe7afad] 	Receiving objects:   8% (20/245)   
+ DEBUG [efe7afad] 	Receiving objects:   9% (23/245)   
+ DEBUG [efe7afad] 	Receiving objects:  10% (25/245)   
+ DEBUG [efe7afad] 	Receiving objects:  11% (27/245)   
+ DEBUG [efe7afad] 	Receiving objects:  12% (30/245)   
+ DEBUG [efe7afad] 	Receiving objects:  13% (32/245)   
+ DEBUG [efe7afad] 	Receiving objects:  14% (35/245)   
+ DEBUG [efe7afad] 	Receiving objects:  15% (37/245)   
+ DEBUG [efe7afad] 	Receiving objects:  16% (40/245)   
+ DEBUG [efe7afad] 	Receiving objects:  17% (42/245)   
+ DEBUG [efe7afad] 	Receiving objects:  18% (45/245)   
+ DEBUG [efe7afad] 	Receiving objects:  19% (47/245)   
+ DEBUG [efe7afad] 	Receiving objects:  20% (49/245)   
+ DEBUG [efe7afad] 	Receiving objects:  21% (52/245)   
+ DEBUG [efe7afad] 	Receiving objects:  22% (54/245)   
+ DEBUG [efe7afad] 	Receiving objects:  23% (57/245)   
+ DEBUG [efe7afad] 	Receiving objects:  24% (59/245)   
+ DEBUG [efe7afad] 	Receiving objects:  25% (62/245)   
+ DEBUG [efe7afad] 	Receiving objects:  26% (64/245)   
+ DEBUG [efe7afad] 	Receiving objects:  27% (67/245)   
+ DEBUG [efe7afad] 	Receiving objects:  28% (69/245)   
+ DEBUG [efe7afad] 	Receiving objects:  29% (72/245)   
+ DEBUG [efe7afad] 	Receiving objects:  30% (74/245)   
+ DEBUG [efe7afad] 	Receiving objects:  31% (76/245)   
+ DEBUG [efe7afad] 	Receiving objects:  32% (79/245)   
+ DEBUG [efe7afad] 	Receiving objects:  33% (81/245)   
+ DEBUG [efe7afad] 	Receiving objects:  34% (84/245)   
+ DEBUG [efe7afad] 	Receiving objects:  35% (86/245)   
+ DEBUG [efe7afad] 	Receiving objects:  36% (89/245)   
+ DEBUG [efe7afad] 	Receiving objects:  37% (91/245)   
+ DEBUG [efe7afad] 	Receiving objects:  38% (94/245)   
+ DEBUG [efe7afad] 	Receiving objects:  39% (96/245)   
+ DEBUG [efe7afad] 	Receiving objects:  40% (98/245)   
+ DEBUG [efe7afad] 	Receiving objects:  41% (101/245)   
+ DEBUG [efe7afad] 	Receiving objects:  42% (103/245)   
+ DEBUG [efe7afad] 	Receiving objects:  43% (106/245)   
+ DEBUG [efe7afad] 	Receiving objects:  44% (108/245)   
+ DEBUG [efe7afad] 	Receiving objects:  45% (111/245)   
+ DEBUG [efe7afad] 	Receiving objects:  46% (113/245)   
+ DEBUG [efe7afad] 	Receiving objects:  47% (116/245)   
+ DEBUG [efe7afad] 	Receiving objects:  48% (118/245)   
+ DEBUG [efe7afad] 	Receiving objects:  49% (121/245)   
+ DEBUG [efe7afad] 	Receiving objects:  50% (123/245)   
+ DEBUG [efe7afad] 	Receiving objects:  51% (125/245)   
+ DEBUG [efe7afad] 	remote: Total 245 (delta 95), reused 187 (delta 49), pack-reused 0
+ DEBUG [efe7afad] 	
+Receiving objects:  52% (128/245)   Receiving objects:  53% (130/245)   
+ DEBUG [efe7afad] 	Receiving objects:  54% (133/245)   
+ DEBUG [efe7afad] 	Receiving objects:  55% (135/245)   
+ DEBUG [efe7afad] 	Receiving objects:  56% (138/245)   
+ DEBUG [efe7afad] 	Receiving objects:  57% (140/245)   
+ DEBUG [efe7afad] 	Receiving objects:  58% (143/245)   
+ DEBUG [efe7afad] 	Receiving objects:  59% (145/245)   
+ DEBUG [efe7afad] 	Receiving objects:  60% (147/245)   
+ DEBUG [efe7afad] 	Receiving objects:  61% (150/245)   
+ DEBUG [efe7afad] 	Receiving objects:  62% (152/245)   
+ DEBUG [efe7afad] 	Receiving objects:  63% (155/245)   
+ DEBUG [efe7afad] 	Receiving objects:  64% (157/245)   
+ DEBUG [efe7afad] 	Receiving objects:  65% (160/245)   
+ DEBUG [efe7afad] 	Receiving objects:  66% (162/245)   
+ DEBUG [efe7afad] 	Receiving objects:  67% (165/245)   
+ DEBUG [efe7afad] 	Receiving objects:  68% (167/245)   
+ DEBUG [efe7afad] 	Receiving objects:  69% (170/245)   
+ DEBUG [efe7afad] 	Receiving objects:  70% (172/245)   
+ DEBUG [efe7afad] 	Receiving objects:  71% (174/245)   
+ DEBUG [efe7afad] 	Receiving objects:  72% (177/245)   Receiving objects:  73% (179/245)   
+ DEBUG [efe7afad] 	Receiving objects:  74% (182/245)   Receiving objects:  75% (184/245)   
+ DEBUG [efe7afad] 	Receiving objects:  76% (187/245)   
+ DEBUG [efe7afad] 	Receiving objects:  77% (189/245)   Receiving objects:  78% (192/245)   
+ DEBUG [efe7afad] 	Receiving objects:  79% (194/245)   Receiving objects:  80% (196/245)   
+ DEBUG [efe7afad] 	Receiving objects:  81% (199/245)   Receiving objects:  82% (201/245)   
+ DEBUG [efe7afad] 	Receiving objects:  83% (204/245)   Receiving objects:  84% (206/245)   Receiving objects:  85% (209/245)   
+ DEBUG [efe7afad] 	Receiving objects:  86% (211/245)   Receiving objects:  87% (214/245)   Receiving objects:  88% (216/245)   
+ DEBUG [efe7afad] 	Receiving objects:  89% (219/245)   Receiving objects:  90% (221/245)   Receiving objects:  91% (223/245)   
+ DEBUG [efe7afad] 	Receiving objects:  92% (226/245)   
+ DEBUG [efe7afad] 	Receiving objects:  93% (228/245)   
+ DEBUG [efe7afad] 	Receiving objects:  94% (231/245)   
+ DEBUG [efe7afad] 	Receiving objects:  95% (233/245)   
+ DEBUG [efe7afad] 	Receiving objects:  96% (236/245)   
+ DEBUG [efe7afad] 	Receiving objects:  97% (238/245)   
+ DEBUG [efe7afad] 	Receiving objects:  98% (241/245)   
+ DEBUG [efe7afad] 	Receiving objects:  99% (243/245)   
+ DEBUG [efe7afad] 	Receiving objects: 100% (245/245)   Receiving objects: 100% (245/245), 41.72 KiB | 184.00 KiB/s, done.
+ DEBUG [efe7afad] 	
+Resolving deltas:   0% (0/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  27% (26/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  37% (36/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  38% (37/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  42% (40/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  45% (43/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  46% (44/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  55% (53/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  60% (57/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  61% (58/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  65% (62/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  68% (65/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  69% (66/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  70% (67/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  71% (68/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  81% (77/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  82% (78/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  84% (80/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  88% (84/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  89% (85/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  90% (86/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  91% (87/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  92% (88/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  93% (89/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  94% (90/95)   
+ DEBUG [efe7afad] 	Resolving deltas:  95% (91/95)   
+ DEBUG [efe7afad] 	Resolving deltas: 100% (95/95)   
+ DEBUG [efe7afad] 	Resolving deltas: 100% (95/95), done.
+ DEBUG [efe7afad] 	
+  INFO [efe7afad] Finished in 2.942 seconds with exit status 0 (successful).
+ DEBUG [79ae16f7] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [79ae16f7] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [79ae16f7] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [1e71835d] Running /usr/bin/env git remote set-url origin git@github.com:sonlh-0262/rails-api-demo.git as deploy@localhost
+ DEBUG [1e71835d] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env git remote set-url origin git@github.com:sonlh-0262/rails-api-demo.git )
+  INFO [1e71835d] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [2b4f6010] Running /usr/bin/env git remote update --prune as deploy@localhost
+ DEBUG [2b4f6010] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [2b4f6010] 	Fetching origin
+ DEBUG [2b4f6010] 	
+  INFO [2b4f6010] Finished in 2.386 seconds with exit status 0 (successful).
+ DEBUG [060981a4] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [060981a4] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [060981a4] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [151dcd64] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152004 as deploy@localhost
+ DEBUG [151dcd64] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152004 )
+  INFO [151dcd64] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [bb1ac67b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/rails-api-demo/releases/20210808152004 as deploy@localhost
+ DEBUG [bb1ac67b] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/rails-api-demo/releases/20210808152004 )
+  INFO [bb1ac67b] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [d969f229] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [d969f229] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [d969f229] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [14d2d3b1] Running /usr/bin/env git rev-list --max-count=1 master as deploy@localhost
+ DEBUG [14d2d3b1] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-762603a8179f527c3b8a.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [14d2d3b1] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [14d2d3b1] 	
+ DEBUG [14d2d3b1] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [7d9bb071] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152004; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152004'" 1>&2; false; fi as deploy@localhost
+ DEBUG [7d9bb071] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152004; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152004'" 1>&2; false; fi
+ DEBUG [7d9bb071] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [152cf9a7] Running /usr/bin/env echo "bd4751bba34fb8f675c8ae4b0d92cb9a843abc59" > REVISION as deploy@localhost
+ DEBUG [152cf9a7] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152004 && /usr/bin/env echo "bd4751bba34fb8f675c8ae4b0d92cb9a843abc59" > REVISION
+  INFO [152cf9a7] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [dc0de95a] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152004/config as deploy@localhost
+ DEBUG [dc0de95a] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152004/config
+  INFO [dc0de95a] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [6d4e838b] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml ] as deploy@localhost
+ DEBUG [6d4e838b] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml ]
+ DEBUG [6d4e838b] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [201e649c] Running [ -f /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml ] as deploy@localhost
+ DEBUG [201e649c] Command: [ -f /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml ]
+ DEBUG [201e649c] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [3201200b] Running /usr/bin/env rm /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml as deploy@localhost
+ DEBUG [3201200b] Command: /usr/bin/env rm /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml
+  INFO [3201200b] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [7e4a9b53] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/database.yml /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml as deploy@localhost
+ DEBUG [7e4a9b53] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/database.yml /home/deploy/apps/rails-api-demo/releases/20210808152004/config/database.yml
+  INFO [7e4a9b53] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [c4369a9f] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/config/master.key ] as deploy@localhost
+ DEBUG [c4369a9f] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/config/master.key ]
+ DEBUG [c4369a9f] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [b2f6147c] Running [ -f /home/deploy/apps/rails-api-demo/releases/20210808152004/config/master.key ] as deploy@localhost
+ DEBUG [b2f6147c] Command: [ -f /home/deploy/apps/rails-api-demo/releases/20210808152004/config/master.key ]
+ DEBUG [b2f6147c] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [58c2ec12] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/master.key /home/deploy/apps/rails-api-demo/releases/20210808152004/config/master.key as deploy@localhost
+ DEBUG [58c2ec12] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/master.key /home/deploy/apps/rails-api-demo/releases/20210808152004/config/master.key
+  INFO [58c2ec12] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [d0d6307b] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152004 /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor /home/deploy/apps/rails-api-demo/releases/20210808152004/public as deploy@localhost
+ DEBUG [d0d6307b] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152004 /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor /home/deploy/apps/rails-api-demo/releases/20210808152004/public
+  INFO [d0d6307b] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [62c74495] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/log ] as deploy@localhost
+ DEBUG [62c74495] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/log ]
+ DEBUG [62c74495] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [f29e07eb] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/log ] as deploy@localhost
+ DEBUG [f29e07eb] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/log ]
+ DEBUG [f29e07eb] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [f74148d2] Running /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152004/log as deploy@localhost
+ DEBUG [f74148d2] Command: /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152004/log
+  INFO [f74148d2] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [f2bd340d] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/releases/20210808152004/log as deploy@localhost
+ DEBUG [f2bd340d] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/releases/20210808152004/log
+  INFO [f2bd340d] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [65e95bdb] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids ] as deploy@localhost
+ DEBUG [65e95bdb] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids ]
+ DEBUG [65e95bdb] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [656cd54f] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids ] as deploy@localhost
+ DEBUG [656cd54f] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids ]
+ DEBUG [656cd54f] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [5e95c565] Running /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids as deploy@localhost
+ DEBUG [5e95c565] Command: /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids
+  INFO [5e95c565] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [9b35f370] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids as deploy@localhost
+ DEBUG [9b35f370] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/pids
+  INFO [9b35f370] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [1f8757f6] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/cache ] as deploy@localhost
+ DEBUG [1f8757f6] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/cache ]
+ DEBUG [1f8757f6] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [16b6030e] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/cache ] as deploy@localhost
+ DEBUG [16b6030e] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/cache ]
+ DEBUG [16b6030e] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [1658482a] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/cache as deploy@localhost
+ DEBUG [1658482a] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/cache
+  INFO [1658482a] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [fee7f43c] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/sockets ] as deploy@localhost
+ DEBUG [fee7f43c] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/sockets ]
+ DEBUG [fee7f43c] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [cdf11e40] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/sockets ] as deploy@localhost
+ DEBUG [cdf11e40] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/sockets ]
+ DEBUG [cdf11e40] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [6e7172ad] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/sockets as deploy@localhost
+ DEBUG [6e7172ad] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/releases/20210808152004/tmp/sockets
+  INFO [6e7172ad] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [3ac9dbb2] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor/bundle ] as deploy@localhost
+ DEBUG [3ac9dbb2] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor/bundle ]
+ DEBUG [3ac9dbb2] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [6b388c7f] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor/bundle ] as deploy@localhost
+ DEBUG [6b388c7f] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor/bundle ]
+ DEBUG [6b388c7f] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [8c07dcd1] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor/bundle as deploy@localhost
+ DEBUG [8c07dcd1] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/releases/20210808152004/vendor/bundle
+  INFO [8c07dcd1] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [296b2fcb] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/public/system ] as deploy@localhost
+ DEBUG [296b2fcb] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152004/public/system ]
+ DEBUG [296b2fcb] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [7a499f9a] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/public/system ] as deploy@localhost
+ DEBUG [7a499f9a] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152004/public/system ]
+ DEBUG [7a499f9a] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [010c38a0] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/public/system /home/deploy/apps/rails-api-demo/releases/20210808152004/public/system as deploy@localhost
+ DEBUG [010c38a0] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/public/system /home/deploy/apps/rails-api-demo/releases/20210808152004/public/system
+  INFO [010c38a0] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [18bfa70d] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152004; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152004'" 1>&2; false; fi as deploy@localhost
+ DEBUG [18bfa70d] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152004; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152004'" 1>&2; false; fi
+ DEBUG [18bfa70d] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [4cbbf07d] Running ~/.rvm/bin/rvm default do bundle config --local deployment true as deploy@localhost
+ DEBUG [4cbbf07d] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152004 && ~/.rvm/bin/rvm default do bundle config --local deployment true
+ DEBUG [4cbbf07d] 	[1mTraceback[m (most recent call last):
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 		
+ DEBUG [4cbbf07d] 	4: from /home/deploy/.rvm/gems/ruby-2.6.6/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 		
+ DEBUG [4cbbf07d] 	3: from /home/deploy/.rvm/gems/ruby-2.6.6/bin/ruby_executable_hooks:24:in `eval'
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 		
+ DEBUG [4cbbf07d] 	2: from /home/deploy/.rvm/rubies/ruby-2.6.6/bin/bundle:23:in `<main>'
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 		
+ DEBUG [4cbbf07d] 	1: from /home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems.rb:303:in `activate_bin_path'
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 	/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems.rb:284:in `find_spec_for_exe'
+ DEBUG [4cbbf07d] 	: 
+ DEBUG [4cbbf07d] 	[1m
+ DEBUG [4cbbf07d] 	Could not find 'bundler' (2.2.21) required by your /home/deploy/apps/rails-api-demo/releases/20210808152004/Gemfile.lock.
+ DEBUG [4cbbf07d] 	 (
+ DEBUG [4cbbf07d] 	[1;4m
+ DEBUG [4cbbf07d] 	Gem::GemNotFoundException
+ DEBUG [4cbbf07d] 	[m
+ DEBUG [4cbbf07d] 	[1m
+ DEBUG [4cbbf07d] 	)
+ DEBUG [4cbbf07d] 	[m
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 	[1m
+ DEBUG [4cbbf07d] 	To update to the latest version installed on your system, run `bundle update --bundler`.
+ DEBUG [4cbbf07d] 	[m
+ DEBUG [4cbbf07d] 	
+ DEBUG [4cbbf07d] 	[1m
+ DEBUG [4cbbf07d] 	To install the missing version, run `gem install bundler:2.2.21`
+ DEBUG [4cbbf07d] 	[m
+ DEBUG [4cbbf07d] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:20:36 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c5e8aa90] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [c5e8aa90] Command: [ -d ~/.rvm ]
+ DEBUG [c5e8aa90] Finished in 0.599 seconds with exit status 0 (successful).
+ DEBUG [205c9476] Running ~/.rvm/bin/rvm version as deploy@localhost
+ DEBUG [205c9476] Command: ~/.rvm/bin/rvm version
+ DEBUG [205c9476] 	rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [205c9476] 	
+ DEBUG [205c9476] Finished in 0.187 seconds with exit status 0 (successful).
+ DEBUG [eadba815] Running ~/.rvm/bin/rvm current as deploy@localhost
+ DEBUG [eadba815] Command: ~/.rvm/bin/rvm current
+ DEBUG [eadba815] 	ruby-2.6.6
+ DEBUG [eadba815] 	
+ DEBUG [eadba815] Finished in 0.223 seconds with exit status 0 (successful).
+ DEBUG [bc181a8e] Running ~/.rvm/bin/rvm default do ruby --version as deploy@localhost
+ DEBUG [bc181a8e] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [bc181a8e] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [bc181a8e] 	
+ DEBUG [bc181a8e] Finished in 0.326 seconds with exit status 0 (successful).
+  INFO [1eebd392] Running /usr/bin/env mkdir -p /tmp as deploy@localhost
+ DEBUG [1eebd392] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1eebd392] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-aa8b2b4cf00436e381c5.sh 0.0%
+  INFO Uploading /tmp/git-ssh-aa8b2b4cf00436e381c5.sh 100.0%
+  INFO [437ad2e1] Running /usr/bin/env chmod 700 /tmp/git-ssh-aa8b2b4cf00436e381c5.sh as deploy@localhost
+ DEBUG [437ad2e1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-aa8b2b4cf00436e381c5.sh
+  INFO [437ad2e1] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [5b3d69fa] Running /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD as deploy@localhost
+ DEBUG [5b3d69fa] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aa8b2b4cf00436e381c5.sh" ; /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD )
+ DEBUG [5b3d69fa] 	Warning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+ DEBUG [5b3d69fa] 	
+ DEBUG [5b3d69fa] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [5b3d69fa] 		HEAD
+  INFO [5b3d69fa] Finished in 2.438 seconds with exit status 0 (successful).
+  INFO [8af2c451] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases as deploy@localhost
+ DEBUG [8af2c451] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases
+  INFO [8af2c451] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [29bd5675] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system as deploy@localhost
+ DEBUG [29bd5675] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system
+  INFO [29bd5675] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [e5408a60] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config as deploy@localhost
+ DEBUG [e5408a60] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config
+  INFO [e5408a60] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [cfc64548] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [cfc64548] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [cfc64548] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [a7f36a1d] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [a7f36a1d] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [a7f36a1d] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [f7d0f6d8] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [f7d0f6d8] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [f7d0f6d8] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [e76e9e84] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [e76e9e84] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [e76e9e84] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [f05b21c9] Running [ -f /home/deploy/apps/rails-api-demo/shared/puma.rb ] as deploy@localhost
+ DEBUG [f05b21c9] Command: [ -f /home/deploy/apps/rails-api-demo/shared/puma.rb ]
+ DEBUG [f05b21c9] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [f3fa0199] Running [ -f /home/deploy/apps/rails-api-demo/current/REVISION ] as deploy@localhost
+ DEBUG [f3fa0199] Command: [ -f /home/deploy/apps/rails-api-demo/current/REVISION ]
+ DEBUG [f3fa0199] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [72843027] Running [ -f /home/deploy/apps/rails-api-demo/repo/HEAD ] as deploy@localhost
+ DEBUG [72843027] Command: [ -f /home/deploy/apps/rails-api-demo/repo/HEAD ]
+ DEBUG [72843027] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/rails-api-demo/repo
+ DEBUG [60b19577] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [60b19577] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [60b19577] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [e9656465] Running /usr/bin/env git remote set-url origin git@github.com:sonlh-0262/rails-api-demo.git as deploy@localhost
+ DEBUG [e9656465] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aa8b2b4cf00436e381c5.sh" ; /usr/bin/env git remote set-url origin git@github.com:sonlh-0262/rails-api-demo.git )
+  INFO [e9656465] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [03ce4501] Running /usr/bin/env git remote update --prune as deploy@localhost
+ DEBUG [03ce4501] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aa8b2b4cf00436e381c5.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [03ce4501] 	Fetching origin
+ DEBUG [03ce4501] 	
+  INFO [03ce4501] Finished in 2.377 seconds with exit status 0 (successful).
+ DEBUG [b0093ebc] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [b0093ebc] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [b0093ebc] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [95033928] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152040 as deploy@localhost
+ DEBUG [95033928] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aa8b2b4cf00436e381c5.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152040 )
+  INFO [95033928] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [ef966421] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/rails-api-demo/releases/20210808152040 as deploy@localhost
+ DEBUG [ef966421] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aa8b2b4cf00436e381c5.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/rails-api-demo/releases/20210808152040 )
+  INFO [ef966421] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [ac61113b] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [ac61113b] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [ac61113b] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [bb60e95f] Running /usr/bin/env git rev-list --max-count=1 master as deploy@localhost
+ DEBUG [bb60e95f] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aa8b2b4cf00436e381c5.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [bb60e95f] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [bb60e95f] 	
+ DEBUG [bb60e95f] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [5da5d005] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152040; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152040'" 1>&2; false; fi as deploy@localhost
+ DEBUG [5da5d005] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152040; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152040'" 1>&2; false; fi
+ DEBUG [5da5d005] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [3c7cce3c] Running /usr/bin/env echo "bd4751bba34fb8f675c8ae4b0d92cb9a843abc59" > REVISION as deploy@localhost
+ DEBUG [3c7cce3c] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152040 && /usr/bin/env echo "bd4751bba34fb8f675c8ae4b0d92cb9a843abc59" > REVISION
+  INFO [3c7cce3c] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [7c677e9e] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152040/config as deploy@localhost
+ DEBUG [7c677e9e] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152040/config
+  INFO [7c677e9e] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [9f8adae0] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml ] as deploy@localhost
+ DEBUG [9f8adae0] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml ]
+ DEBUG [9f8adae0] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [81620aa0] Running [ -f /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml ] as deploy@localhost
+ DEBUG [81620aa0] Command: [ -f /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml ]
+ DEBUG [81620aa0] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [aa0f8205] Running /usr/bin/env rm /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml as deploy@localhost
+ DEBUG [aa0f8205] Command: /usr/bin/env rm /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml
+  INFO [aa0f8205] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [b065637e] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/database.yml /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml as deploy@localhost
+ DEBUG [b065637e] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/database.yml /home/deploy/apps/rails-api-demo/releases/20210808152040/config/database.yml
+  INFO [b065637e] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [16ddaf7e] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/config/master.key ] as deploy@localhost
+ DEBUG [16ddaf7e] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/config/master.key ]
+ DEBUG [16ddaf7e] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [8b59734e] Running [ -f /home/deploy/apps/rails-api-demo/releases/20210808152040/config/master.key ] as deploy@localhost
+ DEBUG [8b59734e] Command: [ -f /home/deploy/apps/rails-api-demo/releases/20210808152040/config/master.key ]
+ DEBUG [8b59734e] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [91ab3d3e] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/master.key /home/deploy/apps/rails-api-demo/releases/20210808152040/config/master.key as deploy@localhost
+ DEBUG [91ab3d3e] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/master.key /home/deploy/apps/rails-api-demo/releases/20210808152040/config/master.key
+  INFO [91ab3d3e] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [25a1e1c7] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152040 /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor /home/deploy/apps/rails-api-demo/releases/20210808152040/public as deploy@localhost
+ DEBUG [25a1e1c7] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152040 /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor /home/deploy/apps/rails-api-demo/releases/20210808152040/public
+  INFO [25a1e1c7] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [6fb47b93] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/log ] as deploy@localhost
+ DEBUG [6fb47b93] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/log ]
+ DEBUG [6fb47b93] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [43556eda] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/log ] as deploy@localhost
+ DEBUG [43556eda] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/log ]
+ DEBUG [43556eda] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [35b8b057] Running /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152040/log as deploy@localhost
+ DEBUG [35b8b057] Command: /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152040/log
+  INFO [35b8b057] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [daafa6ee] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/releases/20210808152040/log as deploy@localhost
+ DEBUG [daafa6ee] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/releases/20210808152040/log
+  INFO [daafa6ee] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [37890618] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids ] as deploy@localhost
+ DEBUG [37890618] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids ]
+ DEBUG [37890618] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [5b28488d] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids ] as deploy@localhost
+ DEBUG [5b28488d] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids ]
+ DEBUG [5b28488d] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [e3ac08c8] Running /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids as deploy@localhost
+ DEBUG [e3ac08c8] Command: /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids
+  INFO [e3ac08c8] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [e3d3b952] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids as deploy@localhost
+ DEBUG [e3d3b952] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/pids
+  INFO [e3d3b952] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [88620088] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/cache ] as deploy@localhost
+ DEBUG [88620088] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/cache ]
+ DEBUG [88620088] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [82e1cc02] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/cache ] as deploy@localhost
+ DEBUG [82e1cc02] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/cache ]
+ DEBUG [82e1cc02] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [4c1717b6] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/cache as deploy@localhost
+ DEBUG [4c1717b6] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/cache
+  INFO [4c1717b6] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [d1b0b5df] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/sockets ] as deploy@localhost
+ DEBUG [d1b0b5df] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/sockets ]
+ DEBUG [d1b0b5df] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [eead81f3] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/sockets ] as deploy@localhost
+ DEBUG [eead81f3] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/sockets ]
+ DEBUG [eead81f3] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [8346881c] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/sockets as deploy@localhost
+ DEBUG [8346881c] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/releases/20210808152040/tmp/sockets
+  INFO [8346881c] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [68ae799b] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor/bundle ] as deploy@localhost
+ DEBUG [68ae799b] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor/bundle ]
+ DEBUG [68ae799b] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [88e061f2] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor/bundle ] as deploy@localhost
+ DEBUG [88e061f2] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor/bundle ]
+ DEBUG [88e061f2] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [4408a12f] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor/bundle as deploy@localhost
+ DEBUG [4408a12f] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/releases/20210808152040/vendor/bundle
+  INFO [4408a12f] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [fb7347c0] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/public/system ] as deploy@localhost
+ DEBUG [fb7347c0] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152040/public/system ]
+ DEBUG [fb7347c0] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [62e3db73] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/public/system ] as deploy@localhost
+ DEBUG [62e3db73] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152040/public/system ]
+ DEBUG [62e3db73] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [58836613] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/public/system /home/deploy/apps/rails-api-demo/releases/20210808152040/public/system as deploy@localhost
+ DEBUG [58836613] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/public/system /home/deploy/apps/rails-api-demo/releases/20210808152040/public/system
+  INFO [58836613] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [b2ceb87b] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152040; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152040'" 1>&2; false; fi as deploy@localhost
+ DEBUG [b2ceb87b] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152040; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152040'" 1>&2; false; fi
+ DEBUG [b2ceb87b] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [58311cfc] Running ~/.rvm/bin/rvm default do bundle config --local deployment true as deploy@localhost
+ DEBUG [58311cfc] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152040 && ~/.rvm/bin/rvm default do bundle config --local deployment true
+  INFO [58311cfc] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [b22b97b5] Running ~/.rvm/bin/rvm default do bundle config --local path /home/deploy/apps/rails-api-demo/shared/bundle as deploy@localhost
+ DEBUG [b22b97b5] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152040 && ~/.rvm/bin/rvm default do bundle config --local path /home/deploy/apps/rails-api-demo/shared/bundle
+  INFO [b22b97b5] Finished in 0.594 seconds with exit status 0 (successful).
+  INFO [39a2f593] Running ~/.rvm/bin/rvm default do bundle config --local without development:test as deploy@localhost
+ DEBUG [39a2f593] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152040 && ~/.rvm/bin/rvm default do bundle config --local without development:test
+  INFO [39a2f593] Finished in 0.554 seconds with exit status 0 (successful).
+ DEBUG [15e50826] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152040; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152040'" 1>&2; false; fi as deploy@localhost
+ DEBUG [15e50826] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152040; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152040'" 1>&2; false; fi
+ DEBUG [15e50826] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [34addd3a] Running ~/.rvm/bin/rvm default do bundle check as deploy@localhost
+ DEBUG [34addd3a] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152040 && ~/.rvm/bin/rvm default do bundle check
+ DEBUG [34addd3a] 	[31mThe following gems are missing[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rails (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * mysql2 (0.5.3)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * puma (4.3.8)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * bootsnap (1.7.7)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * capistrano (3.16.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * capistrano3-puma (5.0.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * capistrano-rails (1.6.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * capistrano-rvm (0.1.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * grape (1.5.3)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * net-ssh (6.1.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * ed25519 (1.2.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * bcrypt_pbkdf (1.1.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * actioncable (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * actionmailbox (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * actionmailer (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * actionpack (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * actiontext (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * actionview (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * activejob (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * activemodel (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * activerecord (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * activestorage (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * activesupport (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * railties (6.1.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * sprockets-rails (3.2.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * nio4r (2.5.8)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * msgpack (1.4.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * airbrussh (1.4.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * i18n (1.8.10)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rake (13.0.6)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * sshkit (1.21.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * capistrano-bundler (2.0.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * builder (3.2.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * dry-types (1.5.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * mustermann-grape (1.0.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rack (2.2.3)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rack-accept (0.4.5)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * websocket-driver (0.7.5)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * mail (2.7.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rails-dom-testing (2.0.3)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rack-test (1.1.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * rails-html-sanitizer (1.3.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * nokogiri (1.12.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * erubi (1.10.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * globalid (0.5.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * marcel (1.0.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * mini_mime (1.1.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * concurrent-ruby (1.1.9)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * minitest (5.14.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * tzinfo (2.0.4)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * zeitwerk (2.4.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * method_source (1.0.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * thor (1.1.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * sprockets (4.0.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * net-scp (3.0.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * dry-container (0.8.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * dry-core (0.7.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * dry-inflector (0.2.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * dry-logic (1.2.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * mustermann (1.1.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * websocket-extensions (0.1.5)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * loofah (2.11.0)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * racc (1.5.2)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * dry-configurable (0.12.1)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * ruby2_keywords (0.0.5)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[31m * crass (1.0.6)[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [34addd3a] 	
+ DEBUG [34addd3a] Finished in 0.620 seconds with exit status 1 (failed).
+  INFO [c7860a2e] Running ~/.rvm/bin/rvm default do bundle install --jobs 4 --quiet as deploy@localhost
+ DEBUG [c7860a2e] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152040 && ~/.rvm/bin/rvm default do bundle install --jobs 4 --quiet
+ DEBUG [c7860a2e] 	[31mGem::Ext::BuildError: ERROR: Failed to build gem native extension.
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	[0m
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	current directory:
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	/home/deploy/apps/rails-api-demo/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	/home/deploy/.rvm/rubies/ruby-2.6.6/bin/ruby -I
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	./siteconf20210808-13166-d5e1dm.rb extconf.rb
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	checking for rb_absint_size()... yes
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	checking for rb_absint_singlebit_p()... yes
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	checking for rb_wait_for_single_fd()... yes
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	checking for -lmysqlclient... no
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	-----
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	try again.
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	-----
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	*** extconf.rb failed ***
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	Could not create Makefile due to some reason, probably lack of necessary
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	libraries and/or headers.  Check the mkmf.log file for more details.  You may
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	need configuration options.
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 	Provided configuration options:
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-opt-dir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-opt-dir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-opt-include
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-opt-include=${opt-dir}/include
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-opt-lib
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-opt-lib=${opt-dir}/lib
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-make-prog
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-make-prog
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--srcdir=.
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--curdir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--ruby=/home/deploy/.rvm/rubies/ruby-2.6.6/bin/$(RUBY_BASE_NAME)
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-dir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-dir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-include
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-include=${mysql-dir}/include
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-lib
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-lib=${mysql-dir}/lib
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-config
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-config
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-dir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-dir
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-include
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-include=${mysql-dir}/include
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysql-lib
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--without-mysql-lib=${mysql-dir}/lib
+ DEBUG [c7860a2e] 	
+ DEBUG [c7860a2e] 		
+ DEBUG [c7860a2e] 	--with-mysqlclientlib
+	--without-mysqlclientlib
+ DEBUG [c7860a2e] 	
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/apps/rails-api-demo/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/apps/rails-api-demo/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for
+ DEBUG [c7860a2e] 	
+inspection.
+Results logged to
+/home/deploy/apps/rails-api-demo/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/monitor.rb:235:in
+ DEBUG [c7860a2e] 	`mon_synchronize'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/deploy/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/installer.rb:833:in
+`build_extensions'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/rubygems_gem_installer.rb:66:in
+`build_extensions'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/rubygems_gem_installer.rb:26:in
+`install'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/source/rubygems.rb:186:in
+ DEBUG [c7860a2e] 	`install'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/worker.rb:62:in
+`apply_func'
+ DEBUG [c7860a2e] 	
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/worker.rb:54:in
+`loop'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/deploy/.rvm/gems/ruby-2.6.6/gems/bundler-2.2.25/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing mysql2 (0.5.3), and Bundler cannot
+ DEBUG [c7860a2e] 	continue.[0m
+
+In Gemfile:
+  mysql2[0m
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:23:39 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1d31e09e] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [1d31e09e] Command: [ -d ~/.rvm ]
+ DEBUG [1d31e09e] Finished in 0.776 seconds with exit status 0 (successful).
+ DEBUG [f74d74a2] Running ~/.rvm/bin/rvm version as deploy@localhost
+ DEBUG [f74d74a2] Command: ~/.rvm/bin/rvm version
+ DEBUG [f74d74a2] 	rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [f74d74a2] 	
+ DEBUG [f74d74a2] Finished in 0.190 seconds with exit status 0 (successful).
+ DEBUG [41eba5a7] Running ~/.rvm/bin/rvm current as deploy@localhost
+ DEBUG [41eba5a7] Command: ~/.rvm/bin/rvm current
+ DEBUG [41eba5a7] 	ruby-2.6.6
+ DEBUG [41eba5a7] 	
+ DEBUG [41eba5a7] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [f2364563] Running ~/.rvm/bin/rvm default do ruby --version as deploy@localhost
+ DEBUG [f2364563] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [f2364563] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [f2364563] 	
+ DEBUG [f2364563] Finished in 0.375 seconds with exit status 0 (successful).
+  INFO [47d943b5] Running /usr/bin/env mkdir -p /tmp as deploy@localhost
+ DEBUG [47d943b5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [47d943b5] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-afa3f96a3720f240c634.sh 0.0%
+  INFO Uploading /tmp/git-ssh-afa3f96a3720f240c634.sh 100.0%
+  INFO [de960deb] Running /usr/bin/env chmod 700 /tmp/git-ssh-afa3f96a3720f240c634.sh as deploy@localhost
+ DEBUG [de960deb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-afa3f96a3720f240c634.sh
+  INFO [de960deb] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [b05660e1] Running /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD as deploy@localhost
+ DEBUG [b05660e1] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-afa3f96a3720f240c634.sh" ; /usr/bin/env git ls-remote git@github.com:sonlh-0262/rails-api-demo.git HEAD )
+ DEBUG [b05660e1] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [b05660e1] 		HEAD
+  INFO [b05660e1] Finished in 2.445 seconds with exit status 0 (successful).
+  INFO [adee5f55] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases as deploy@localhost
+ DEBUG [adee5f55] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared /home/deploy/apps/rails-api-demo/releases
+  INFO [adee5f55] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [346b9a91] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system as deploy@localhost
+ DEBUG [346b9a91] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/shared/public/system
+  INFO [346b9a91] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [0deb6533] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config as deploy@localhost
+ DEBUG [0deb6533] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/shared/config
+  INFO [0deb6533] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [abe67eb4] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [abe67eb4] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [abe67eb4] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [90366a89] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [90366a89] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [90366a89] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [66c30376] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ] as deploy@localhost
+ DEBUG [66c30376] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/database.yml ]
+ DEBUG [66c30376] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [9c45408f] Running [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ] as deploy@localhost
+ DEBUG [9c45408f] Command: [ -f /home/deploy/apps/rails-api-demo/shared/config/master.key ]
+ DEBUG [9c45408f] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [36bd5e36] Running [ -f /home/deploy/apps/rails-api-demo/shared/puma.rb ] as deploy@localhost
+ DEBUG [36bd5e36] Command: [ -f /home/deploy/apps/rails-api-demo/shared/puma.rb ]
+ DEBUG [36bd5e36] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [0e0cca62] Running [ -f /home/deploy/apps/rails-api-demo/current/REVISION ] as deploy@localhost
+ DEBUG [0e0cca62] Command: [ -f /home/deploy/apps/rails-api-demo/current/REVISION ]
+ DEBUG [0e0cca62] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [a4598479] Running [ -f /home/deploy/apps/rails-api-demo/repo/HEAD ] as deploy@localhost
+ DEBUG [a4598479] Command: [ -f /home/deploy/apps/rails-api-demo/repo/HEAD ]
+ DEBUG [a4598479] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/rails-api-demo/repo
+ DEBUG [76e65104] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [76e65104] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [76e65104] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [d2d57c6c] Running /usr/bin/env git remote set-url origin git@github.com:sonlh-0262/rails-api-demo.git as deploy@localhost
+ DEBUG [d2d57c6c] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-afa3f96a3720f240c634.sh" ; /usr/bin/env git remote set-url origin git@github.com:sonlh-0262/rails-api-demo.git )
+  INFO [d2d57c6c] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [08e1384e] Running /usr/bin/env git remote update --prune as deploy@localhost
+ DEBUG [08e1384e] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-afa3f96a3720f240c634.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [08e1384e] 	Fetching origin
+ DEBUG [08e1384e] 	
+  INFO [08e1384e] Finished in 2.394 seconds with exit status 0 (successful).
+ DEBUG [4a7e85ea] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [4a7e85ea] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [4a7e85ea] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [9c0d00eb] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152343 as deploy@localhost
+ DEBUG [9c0d00eb] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-afa3f96a3720f240c634.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152343 )
+  INFO [9c0d00eb] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [e1efd3ce] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/rails-api-demo/releases/20210808152343 as deploy@localhost
+ DEBUG [e1efd3ce] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-afa3f96a3720f240c634.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/rails-api-demo/releases/20210808152343 )
+  INFO [e1efd3ce] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [b6ecb4c4] Running if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi as deploy@localhost
+ DEBUG [b6ecb4c4] Command: if test ! -d /home/deploy/apps/rails-api-demo/repo; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/repo'" 1>&2; false; fi
+ DEBUG [b6ecb4c4] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [5f4218b3] Running /usr/bin/env git rev-list --max-count=1 master as deploy@localhost
+ DEBUG [5f4218b3] Command: cd /home/deploy/apps/rails-api-demo/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-afa3f96a3720f240c634.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5f4218b3] 	bd4751bba34fb8f675c8ae4b0d92cb9a843abc59
+ DEBUG [5f4218b3] 	
+ DEBUG [5f4218b3] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [dc1e100f] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152343; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152343'" 1>&2; false; fi as deploy@localhost
+ DEBUG [dc1e100f] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152343; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152343'" 1>&2; false; fi
+ DEBUG [dc1e100f] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [7064bc9e] Running /usr/bin/env echo "bd4751bba34fb8f675c8ae4b0d92cb9a843abc59" > REVISION as deploy@localhost
+ DEBUG [7064bc9e] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152343 && /usr/bin/env echo "bd4751bba34fb8f675c8ae4b0d92cb9a843abc59" > REVISION
+  INFO [7064bc9e] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [56816306] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152343/config as deploy@localhost
+ DEBUG [56816306] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152343/config
+  INFO [56816306] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [88a3c6fe] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml ] as deploy@localhost
+ DEBUG [88a3c6fe] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml ]
+ DEBUG [88a3c6fe] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [405ec51b] Running [ -f /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml ] as deploy@localhost
+ DEBUG [405ec51b] Command: [ -f /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml ]
+ DEBUG [405ec51b] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [789294b2] Running /usr/bin/env rm /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml as deploy@localhost
+ DEBUG [789294b2] Command: /usr/bin/env rm /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml
+  INFO [789294b2] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [b001f759] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/database.yml /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml as deploy@localhost
+ DEBUG [b001f759] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/database.yml /home/deploy/apps/rails-api-demo/releases/20210808152343/config/database.yml
+  INFO [b001f759] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [25e4184c] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/config/master.key ] as deploy@localhost
+ DEBUG [25e4184c] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/config/master.key ]
+ DEBUG [25e4184c] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [d81cf234] Running [ -f /home/deploy/apps/rails-api-demo/releases/20210808152343/config/master.key ] as deploy@localhost
+ DEBUG [d81cf234] Command: [ -f /home/deploy/apps/rails-api-demo/releases/20210808152343/config/master.key ]
+ DEBUG [d81cf234] Finished in 0.003 seconds with exit status 1 (failed).
+  INFO [caa4b2a4] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/master.key /home/deploy/apps/rails-api-demo/releases/20210808152343/config/master.key as deploy@localhost
+ DEBUG [caa4b2a4] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/config/master.key /home/deploy/apps/rails-api-demo/releases/20210808152343/config/master.key
+  INFO [caa4b2a4] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [30d60776] Running /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152343 /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor /home/deploy/apps/rails-api-demo/releases/20210808152343/public as deploy@localhost
+ DEBUG [30d60776] Command: /usr/bin/env mkdir -p /home/deploy/apps/rails-api-demo/releases/20210808152343 /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor /home/deploy/apps/rails-api-demo/releases/20210808152343/public
+  INFO [30d60776] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [fdd96e55] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/log ] as deploy@localhost
+ DEBUG [fdd96e55] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/log ]
+ DEBUG [fdd96e55] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [88cff41e] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/log ] as deploy@localhost
+ DEBUG [88cff41e] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/log ]
+ DEBUG [88cff41e] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [22e4f529] Running /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152343/log as deploy@localhost
+ DEBUG [22e4f529] Command: /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152343/log
+  INFO [22e4f529] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [b1a75ec9] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/releases/20210808152343/log as deploy@localhost
+ DEBUG [b1a75ec9] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/log /home/deploy/apps/rails-api-demo/releases/20210808152343/log
+  INFO [b1a75ec9] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [ce4b9713] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids ] as deploy@localhost
+ DEBUG [ce4b9713] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids ]
+ DEBUG [ce4b9713] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [5a80cd30] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids ] as deploy@localhost
+ DEBUG [5a80cd30] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids ]
+ DEBUG [5a80cd30] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [edd0f366] Running /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids as deploy@localhost
+ DEBUG [edd0f366] Command: /usr/bin/env rm -rf /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids
+  INFO [edd0f366] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [18156af1] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids as deploy@localhost
+ DEBUG [18156af1] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/pids /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/pids
+  INFO [18156af1] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [3baa8a56] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/cache ] as deploy@localhost
+ DEBUG [3baa8a56] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/cache ]
+ DEBUG [3baa8a56] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [134286ab] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/cache ] as deploy@localhost
+ DEBUG [134286ab] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/cache ]
+ DEBUG [134286ab] Finished in 0.043 seconds with exit status 1 (failed).
+  INFO [2bd076ab] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/cache as deploy@localhost
+ DEBUG [2bd076ab] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/cache /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/cache
+  INFO [2bd076ab] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [c6b188ae] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/sockets ] as deploy@localhost
+ DEBUG [c6b188ae] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/sockets ]
+ DEBUG [c6b188ae] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [fa407b7f] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/sockets ] as deploy@localhost
+ DEBUG [fa407b7f] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/sockets ]
+ DEBUG [fa407b7f] Finished in 0.047 seconds with exit status 1 (failed).
+  INFO [d6c26a22] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/sockets as deploy@localhost
+ DEBUG [d6c26a22] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/tmp/sockets /home/deploy/apps/rails-api-demo/releases/20210808152343/tmp/sockets
+  INFO [d6c26a22] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [c1962f92] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor/bundle ] as deploy@localhost
+ DEBUG [c1962f92] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor/bundle ]
+ DEBUG [c1962f92] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [6e2ca840] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor/bundle ] as deploy@localhost
+ DEBUG [6e2ca840] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor/bundle ]
+ DEBUG [6e2ca840] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [8eb28ebc] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor/bundle as deploy@localhost
+ DEBUG [8eb28ebc] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/vendor/bundle /home/deploy/apps/rails-api-demo/releases/20210808152343/vendor/bundle
+  INFO [8eb28ebc] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [fb2dd62d] Running [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/public/system ] as deploy@localhost
+ DEBUG [fb2dd62d] Command: [ -L /home/deploy/apps/rails-api-demo/releases/20210808152343/public/system ]
+ DEBUG [fb2dd62d] Finished in 0.044 seconds with exit status 1 (failed).
+ DEBUG [72150b44] Running [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/public/system ] as deploy@localhost
+ DEBUG [72150b44] Command: [ -d /home/deploy/apps/rails-api-demo/releases/20210808152343/public/system ]
+ DEBUG [72150b44] Finished in 0.004 seconds with exit status 1 (failed).
+  INFO [35f44c6e] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/public/system /home/deploy/apps/rails-api-demo/releases/20210808152343/public/system as deploy@localhost
+ DEBUG [35f44c6e] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/shared/public/system /home/deploy/apps/rails-api-demo/releases/20210808152343/public/system
+  INFO [35f44c6e] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [a9f10320] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152343; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152343'" 1>&2; false; fi as deploy@localhost
+ DEBUG [a9f10320] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152343; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152343'" 1>&2; false; fi
+ DEBUG [a9f10320] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [ab6c7009] Running ~/.rvm/bin/rvm default do bundle config --local deployment true as deploy@localhost
+ DEBUG [ab6c7009] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152343 && ~/.rvm/bin/rvm default do bundle config --local deployment true
+  INFO [ab6c7009] Finished in 0.543 seconds with exit status 0 (successful).
+  INFO [06f38cbe] Running ~/.rvm/bin/rvm default do bundle config --local path /home/deploy/apps/rails-api-demo/shared/bundle as deploy@localhost
+ DEBUG [06f38cbe] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152343 && ~/.rvm/bin/rvm default do bundle config --local path /home/deploy/apps/rails-api-demo/shared/bundle
+  INFO [06f38cbe] Finished in 0.549 seconds with exit status 0 (successful).
+  INFO [1e74141e] Running ~/.rvm/bin/rvm default do bundle config --local without development:test as deploy@localhost
+ DEBUG [1e74141e] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152343 && ~/.rvm/bin/rvm default do bundle config --local without development:test
+  INFO [1e74141e] Finished in 0.589 seconds with exit status 0 (successful).
+ DEBUG [8abd00d6] Running if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152343; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152343'" 1>&2; false; fi as deploy@localhost
+ DEBUG [8abd00d6] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases/20210808152343; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases/20210808152343'" 1>&2; false; fi
+ DEBUG [8abd00d6] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [19d98bf0] Running ~/.rvm/bin/rvm default do bundle check as deploy@localhost
+ DEBUG [19d98bf0] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152343 && ~/.rvm/bin/rvm default do bundle check
+ DEBUG [19d98bf0] 	[31mThe following gems are missing[0m
+ DEBUG [19d98bf0] 	
+ DEBUG [19d98bf0] 	[31m * rails (6.1.4)[0m
+ DEBUG [19d98bf0] 	
+ DEBUG [19d98bf0] 	[31m * mysql2 (0.5.3)[0m
+ DEBUG [19d98bf0] 	
+ DEBUG [19d98bf0] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [19d98bf0] 	
+ DEBUG [19d98bf0] Finished in 0.607 seconds with exit status 1 (failed).
+  INFO [200efd63] Running ~/.rvm/bin/rvm default do bundle install --jobs 4 --quiet as deploy@localhost
+ DEBUG [200efd63] Command: cd /home/deploy/apps/rails-api-demo/releases/20210808152343 && ~/.rvm/bin/rvm default do bundle install --jobs 4 --quiet
+  INFO [200efd63] Finished in 7.585 seconds with exit status 0 (successful).
+  INFO [c9c65875] Running /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/releases/20210808152343 /home/deploy/apps/rails-api-demo/releases/current as deploy@localhost
+ DEBUG [c9c65875] Command: /usr/bin/env ln -s /home/deploy/apps/rails-api-demo/releases/20210808152343 /home/deploy/apps/rails-api-demo/releases/current
+  INFO [c9c65875] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [2e78e8d3] Running /usr/bin/env mv /home/deploy/apps/rails-api-demo/releases/current /home/deploy/apps/rails-api-demo as deploy@localhost
+ DEBUG [2e78e8d3] Command: /usr/bin/env mv /home/deploy/apps/rails-api-demo/releases/current /home/deploy/apps/rails-api-demo
+  INFO [2e78e8d3] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [c91f2bc4] Running /usr/bin/env ls -x /home/deploy/apps/rails-api-demo/releases as deploy@localhost
+ DEBUG [c91f2bc4] Command: /usr/bin/env ls -x /home/deploy/apps/rails-api-demo/releases
+ DEBUG [c91f2bc4] 	20210808152004
+ DEBUG [c91f2bc4] 		
+ DEBUG [c91f2bc4] 	20210808152040
+ DEBUG [c91f2bc4] 		
+ DEBUG [c91f2bc4] 	20210808152343
+ DEBUG [c91f2bc4] 	
+ DEBUG [c91f2bc4] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [50133888] Running if test ! -d /home/deploy/apps/rails-api-demo/releases; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases'" 1>&2; false; fi as deploy@localhost
+ DEBUG [50133888] Command: if test ! -d /home/deploy/apps/rails-api-demo/releases; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/releases'" 1>&2; false; fi
+ DEBUG [50133888] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [ae5f7fc4] Running /usr/bin/env echo "Branch master (at bd4751bba34fb8f675c8ae4b0d92cb9a843abc59) deployed as release 20210808152343 by deploy" >> /home/deploy/apps/rails-api-demo/revisions.log as deploy@localhost
+ DEBUG [ae5f7fc4] Command: cd /home/deploy/apps/rails-api-demo/releases && /usr/bin/env echo "Branch master (at bd4751bba34fb8f675c8ae4b0d92cb9a843abc59) deployed as release 20210808152343 by deploy" >> /home/deploy/apps/rails-api-demo/revisions.log
+  INFO [ae5f7fc4] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [215ed6a5] Running if test ! -d /home/deploy/apps/rails-api-demo/current; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/current'" 1>&2; false; fi as deploy@localhost
+ DEBUG [215ed6a5] Command: if test ! -d /home/deploy/apps/rails-api-demo/current; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/current'" 1>&2; false; fi
+ DEBUG [215ed6a5] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [5f11e23c] Running [ -f /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ] as deploy@localhost
+ DEBUG [5f11e23c] Command: [ -f /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ]
+ DEBUG [5f11e23c] Finished in 0.004 seconds with exit status 1 (failed).
+  WARN Puma not running
+ DEBUG [d4504d94] Running [ -f /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ] as deploy@localhost
+ DEBUG [d4504d94] Command: [ -f /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ]
+ DEBUG [d4504d94] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [4d0334aa] Running if test ! -d /home/deploy/apps/rails-api-demo/current; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/current'" 1>&2; false; fi as deploy@localhost
+ DEBUG [4d0334aa] Command: if test ! -d /home/deploy/apps/rails-api-demo/current; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/current'" 1>&2; false; fi
+ DEBUG [4d0334aa] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [9b3b2800] Running ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/rails-api-demo/shared/puma.rb --daemon as deploy@localhost
+ DEBUG [9b3b2800] Command: cd /home/deploy/apps/rails-api-demo/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/rails-api-demo/shared/puma.rb --daemon )
+ DEBUG [9b3b2800] 	Puma starting in single mode...
+ DEBUG [9b3b2800] 	
+ DEBUG [9b3b2800] 	* Version 4.3.8 (ruby 2.6.6-p146), codename: Mysterious Traveller
+ DEBUG [9b3b2800] 	
+ DEBUG [9b3b2800] 	* Min threads: 4, max threads: 16
+ DEBUG [9b3b2800] 	
+ DEBUG [9b3b2800] 	* Environment: production
+ DEBUG [9b3b2800] 	
+ DEBUG [9b3b2800] 	* Daemonizing...
+ DEBUG [9b3b2800] 	
+  INFO [9b3b2800] Finished in 0.874 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 15:25:22 +0000 cap production puma:status
+  INFO ---------------------------------------------------------------------------
+ DEBUG [afad9b53] Running [ -d ~/.rvm ] as deploy@localhost
+ DEBUG [afad9b53] Command: [ -d ~/.rvm ]
+ DEBUG [afad9b53] Finished in 0.592 seconds with exit status 0 (successful).
+ DEBUG [d69f57e3] Running ~/.rvm/bin/rvm version as deploy@localhost
+ DEBUG [d69f57e3] Command: ~/.rvm/bin/rvm version
+ DEBUG [d69f57e3] 	rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [d69f57e3] 	
+ DEBUG [d69f57e3] Finished in 0.187 seconds with exit status 0 (successful).
+ DEBUG [cc18f2dd] Running ~/.rvm/bin/rvm current as deploy@localhost
+ DEBUG [cc18f2dd] Command: ~/.rvm/bin/rvm current
+ DEBUG [cc18f2dd] 	ruby-2.6.6
+ DEBUG [cc18f2dd] 	
+ DEBUG [cc18f2dd] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [10babcf3] Running ~/.rvm/bin/rvm default do ruby --version as deploy@localhost
+ DEBUG [10babcf3] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [10babcf3] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [10babcf3] 	
+ DEBUG [10babcf3] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [418fb6ca] Running if test ! -d /home/deploy/apps/rails-api-demo/current; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/current'" 1>&2; false; fi as deploy@localhost
+ DEBUG [418fb6ca] Command: if test ! -d /home/deploy/apps/rails-api-demo/current; then echo "Directory does not exist '/home/deploy/apps/rails-api-demo/current'" 1>&2; false; fi
+ DEBUG [418fb6ca] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [e1e9942c] Running [ -f /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ] as deploy@localhost
+ DEBUG [e1e9942c] Command: [ -f /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ]
+ DEBUG [e1e9942c] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [3ac88b65] Running /usr/bin/env kill -0 $( cat /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ) as deploy@localhost
+ DEBUG [3ac88b65] Command: cd /home/deploy/apps/rails-api-demo/current && ( export RACK_ENV="production" ; /usr/bin/env kill -0 $( cat /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.pid ) )
+ DEBUG [3ac88b65] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [f5f7fd8f] Running ~/.rvm/bin/rvm default do bundle exec pumactl -S /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.state -F /home/deploy/apps/rails-api-demo/shared/puma.rb status as deploy@localhost
+ DEBUG [f5f7fd8f] Command: cd /home/deploy/apps/rails-api-demo/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec pumactl -S /home/deploy/apps/rails-api-demo/shared/tmp/pids/puma.state -F /home/deploy/apps/rails-api-demo/shared/puma.rb status )
+ DEBUG [f5f7fd8f] 	Puma is started
+ DEBUG [f5f7fd8f] 	
+  INFO [f5f7fd8f] Finished in 0.886 seconds with exit status 0 (successful).

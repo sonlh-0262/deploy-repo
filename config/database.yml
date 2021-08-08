@@ -1,0 +1,9 @@
+production:
+        adapter: mysql2
+        encoding: utf8mb4
+        pool: <%= ENV.fetch("RAILS_MAX_THREAD") { 5 } %>
+        username: <%= ENV["RAILS_API_DEMO_DB_USERNAME"] %>
+        password: <%= ENV["RAILS_API_DEMO_DB_PASSWORD"] %>
+        database: <%= ENV["RAILS_API_DEMO_DB_NAME"] %>
+        host: <%= ENV["RAILS_API_DEMO_DB_HOST"] %>
+
