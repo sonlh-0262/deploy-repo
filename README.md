@@ -23,6 +23,9 @@ sudo passwd deploy
 sudo visudo -f /etc/sudoers
 
 sudo su - deploy
+
+# display full path terminal
+chsh -s /bin/bash
 ```
 
 #### Install nginx
