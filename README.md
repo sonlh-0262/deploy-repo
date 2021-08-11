@@ -149,3 +149,14 @@ cd /home/deploy/apps/rails-api-demo/current
 # run sidekiq
 ~/.rvm/bin/rvm default do  bundle exec rails sidekiq
 ```
+
+
+Create Alias
+COPY to `.bashrc`:
+
+```
+alias sidekiq='cd /home/deploy/apps/rails-api-demo/current; ~/.rvm/bin/rvm default do  bundle exec sidekiq'
+alias railsc='cd /home/deploy/apps/rails-api-demo/current; ~/.rvm/bin/rvm default do  bundle exec rails c'
+```
+
+`source .bashrc`
