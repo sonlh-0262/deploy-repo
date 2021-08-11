@@ -125,7 +125,7 @@ Reset nginx:
 sudo service nginx restart
 ```
 
-#### Config CD for GithubActions:
+#### Setup CD for GithubActions:
 
 Setup github action config like `https://github.com/sonlh-0262/rails-api-demo/blob/master/.github/workflows/ruby.yml`
 
@@ -134,3 +134,18 @@ Add Secret in Actions Secret:
 COPY `/home/deploy/.ssh/id_rsa` to `PRIVATEKEY` in Action secrets
 
 COPY public IP server to `DEVSERVER` in Action secrets
+
+#### Using rails
+
+```
+export RAILS_ENV=production
+
+# go to folder
+cd /home/deploy/apps/rails-api-demo/current
+
+# run rails console
+~/.rvm/bin/rvm default do  bundle exec rails c
+
+# run sidekiq
+~/.rvm/bin/rvm default do  bundle exec rails sidekiq
+```
