@@ -124,3 +124,13 @@ Reset nginx:
 ```
 sudo service nginx restart
 ```
+
+#### Config CD for GithubActions:
+
+Setup github action config like `https://github.com/sonlh-0262/rails-api-demo/blob/master/.github/workflows/ruby.yml`
+
+Add Secret in Actions Secret:
+
+COPY `/home/deploy/.ssh/id_rsa` to `PRIVATEKEY` in Action secrets
+
+COPY public IP server to `DEVSERVER` in Action secrets
