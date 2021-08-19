@@ -217,5 +217,8 @@ Bind option to allow remote access on the redis server:
 bind 127.0.0.1
 to
 bind 0.0.0.0
+
+# Restart redis
+sudo systemctl restart redis.service
 ```
 
