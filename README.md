@@ -210,3 +210,12 @@ $scp -i ~/Desktop/amazon.pem ~/Desktop/MS115.fa  ubuntu@ec2-54-166-128-20.comput
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
 
+Bind option to allow remote access on the redis server:
+
+```
+# Edit /etc/redis/redis.conf
+bind 127.0.0.1
+to
+bind 0.0.0.0
+```
+
