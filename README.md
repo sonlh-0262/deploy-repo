@@ -160,3 +160,42 @@ alias railsc='cd /home/deploy/apps/rails-api-demo/current; ~/.rvm/bin/rvm defaul
 ```
 
 `source .bashrc`
+
+#### Setup Sidekiq Capistrano
+
+Add `sidekiq` to Gemfile
+
+Add to Capfile
+
+```
+require "capistrano/sidekiq"
+install_plugin Capistrano::Sidekiq
+install_plugin Capistrano::Sidekiq::Systemd
+```
+
+Test by `cap -T | grep sidekiq`
+
+Run in cap:
+
+```
+cap production sidekiq:install
+cap production sidekiq:start
+cap production sidekiq:restart
+```
+
+Check systemd config:
+```
+# check if systemd is setup
+ps aux | grep systemd 
+
+# check environment
+echo $XDG_RUNTIME_DIR
+
+# if it is empty 
+export XDG_RUNTIME_DIR=/run/user/`id -u`
+
+# if there is error absolute path in sidekiq.service
+# edit file ~/.config/systemd/user/sidekiq.service to use absolute path
+# reload file after updated
+systemctl --user daemon-reload
+```
