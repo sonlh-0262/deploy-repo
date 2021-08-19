@@ -205,3 +205,8 @@ Copy file from local to ec2 instance using `scp`
 ```
 $scp -i ~/Desktop/amazon.pem ~/Desktop/MS115.fa  ubuntu@ec2-54-166-128-20.compute-1.amazonaws.com:~/data/
 ```
+
+#### Setup Redis using systemd
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
+
