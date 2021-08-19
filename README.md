@@ -199,3 +199,9 @@ export XDG_RUNTIME_DIR=/run/user/`id -u`
 # reload file after updated
 systemctl --user daemon-reload
 ```
+
+Copy file from local to ec2 instance using `scp`
+
+```
+$scp -i ~/Desktop/amazon.pem ~/Desktop/MS115.fa  ubuntu@ec2-54-166-128-20.compute-1.amazonaws.com:~/data/
+```
