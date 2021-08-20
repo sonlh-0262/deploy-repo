@@ -222,3 +222,56 @@ bind 0.0.0.0
 sudo systemctl restart redis.service
 ```
 
+#### Setup Mysql
+
+Install mysql-server
+```
+sudo apt-get update
+apt search mysql-server # search lib
+apt show mysql-server # show detail lib
+
+sudo apt-get install -y mysql-server
+
+# Optional: check secure
+sudo mysql_secure_installation
+
+# Check status and enable
+sudo systemctl status mysql.service
+sudo systemctl enable mysql.service
+sudo systemctl start mysql.service
+```
+Guide: https://www.cyberciti.biz/faq/install-mysql-server-8-on-ubuntu-20-04-lts-linux/
+
+
+Reset password root:
+
+```
+sudo service mysql stop
+
+# Make sure folder exists
+sudo mkdir /var/run/mysqld
+sudo chown mysql /var/run/mysqld
+
+sudo mysqld_safe --skip-grant-tables&
+ENTER
+
+mysql -uroot
+use mysql
+
+# MySQL 8 – Reset Root Password
+UPDATE mysql.user SET authentication_string=null WHERE User='root';
+flush privileges;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password_here';
+flush privileges;
+exit;
+
+# MySQL 5.7 – Reset Root Password
+update user set authentication_string=PASSWORD('your_password_here') where user='root';
+update user set plugin="mysql_native_password" where User='root';
+flush privileges;
+exit
+
+```
+
+Guide: https://devanswers.co/how-to-reset-mysql-root-password-ubuntu/
+
