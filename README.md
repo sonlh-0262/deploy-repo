@@ -316,3 +316,8 @@ Print 10 process that spend the most memory:
 ```
 ps aux --sort=-%mem | awk 'NR<=10{print $0}'
 ```
+
+Check ip local:
+```
+curl https://ipinfo.io/ip
+```
