@@ -286,3 +286,19 @@ exit
 
 Guide: https://devanswers.co/how-to-reset-mysql-root-password-ubuntu/
 
+Setup to connect client to mysql server:
+```
+# Edit file /etc/mysql/my.cnf
+bind-address 0.0.0.0
+```
+
+Create User in mysql:
+```
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
+
+DROP USER 'username'@'localhost';
+```
+
+Guide: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
