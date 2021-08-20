@@ -8,6 +8,7 @@
   - [Setup Sidekiq Capistrano](#setup-sidekiq-capistrano)
   - [Setup Redis using systemd](#setup-redis-using-systemd)
   - [Setup Mysql](#setup-mysql)
+  - [Monitor server](#monitor-server)
 
 # README
 
@@ -302,3 +303,16 @@ DROP USER 'username'@'localhost';
 ```
 
 Guide: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+#### Monitor server
+
+Check memory usage:
+
+```
+ps -eo size,%mem,pid,user,command --sort -size | grep mysql
+```
+
+Print 10 process that spend the most memory:
+```
+ps aux --sort=-%mem | awk 'NR<=10{print $0}'
+```
