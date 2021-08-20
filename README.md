@@ -1,3 +1,14 @@
+- [Setup server](#setup-server)
+  - [Create deploy user](#create-deploy-user)
+  - [Install nginx](#install-nginx)
+  - [Clone repo deploy](#clone-repo-deploy)
+  - [Install cap](#install-cap)
+  - [Config nginx for rails app](#config-nginx-for-rails-app)
+  - [Setup CD for GithubActions](#setup-cd-for-githubactions)
+  - [Setup Sidekiq Capistrano](#setup-sidekiq-capistrano)
+  - [Setup Redis using systemd](#setup-redis-using-systemd)
+  - [Setup Mysql](#setup-mysql)
+
 # README
 
 Config Capistrano deploy Rails
