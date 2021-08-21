@@ -346,6 +346,9 @@ transport.host: 127.0.0.1
 sudo systemctl restart elasticsearch.service
 ```
 
+Guide:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-18-04
+
 #### Monitor server
 
 Check memory usage:
