@@ -8,6 +8,7 @@
   - [Setup Sidekiq Capistrano](#setup-sidekiq-capistrano)
   - [Setup Redis using systemd](#setup-redis-using-systemd)
   - [Setup Mysql](#setup-mysql)
+  - [Setup Elastic search](#setup-elastic-search)
   - [Monitor server](#monitor-server)
 
 # README
@@ -303,6 +304,47 @@ DROP USER 'username'@'localhost';
 ```
 
 Guide: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+#### Setup Elastic search
+
+Install elastic search:
+
+```
+# Update lib
+sudo apt-get update
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+sudo apt update
+
+# Install ES
+sudo apt install elasticsearch
+
+# Reload systemd
+sudo systemctl daemon-reload
+
+# Start elastic search systemd
+sudo systemctl start elasticsearch.service
+
+# Enable elastic search when boot
+sudo systemctl enable elasticsearch.service
+
+# Test localhost
+curl localhost:9200
+```
+
+Setup to connect ES server from remote:
+```
+sudo su 
+vi /etc/elasticsearch/elasticsearch.yml
+
+# Edit config ES
+network.host: 0.0.0.0
+http.port: 9200
+transport.host: 127.0.0.1
+
+# Restart ES
+sudo systemctl restart elasticsearch.service
+```
 
 #### Monitor server
 
