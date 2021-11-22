@@ -10,6 +10,7 @@
   - [Setup Mysql](#setup-mysql)
   - [Setup Elastic search](#setup-elastic-search)
   - [Monitor server](#monitor-server)
+  - [Docker](#docker-config)
 
 # README
 
@@ -365,4 +366,12 @@ ps aux --sort=-%mem | awk 'NR<=10{print $0}'
 Check ip local:
 ```
 curl https://ipinfo.io/ip
+```
+
+#### Docker config
+Using docker without sudo
+```
+sudo groupadd docker
+sudo gpasswd -a username docker
+sudo service docker restart 
 ```
