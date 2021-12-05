@@ -11,6 +11,8 @@
   - [Setup Elastic search](#setup-elastic-search)
   - [Monitor server](#monitor-server)
   - [Docker](#docker-config)
+  - [Puma local](#puma-local)
+  - [Loadbalancer](#loadbalancer)
 
 # README
 
@@ -375,3 +377,33 @@ sudo groupadd docker
 sudo gpasswd -a username docker
 sudo service docker restart 
 ```
+
+#### Puma local
+Setup puma using in local folder:
+```
+bundle exec puma -e development -b unix:///tmp/my_app.sock
+```
+
+#### Loadbalancer
+Setup load balancer
+```
+Default config:
+
+http {
+    upstream myapp1 {
+        server srv1.example.com;
+        server srv2.example.com;
+        server srv3.example.com;
+    }
+
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://myapp1;
+        }
+    }
+}
+```
+
+Reference: http://nginx.org/en/docs/http/load_balancing.html
