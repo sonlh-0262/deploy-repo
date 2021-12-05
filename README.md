@@ -13,6 +13,7 @@
   - [Docker](#docker-config)
   - [Puma local](#puma-local)
   - [Loadbalancer](#loadbalancer)
+  - [Compress and uncompress](#compress-and-uncompress)
 
 # README
 
@@ -407,3 +408,11 @@ http {
 ```
 
 Reference: http://nginx.org/en/docs/http/load_balancing.html
+
+#### Compress and uncompress
+Uncompress:
+```
+tar -xvf archive.tar.gz
+```
+
+Reference: https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/
