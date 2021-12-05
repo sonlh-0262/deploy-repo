@@ -309,6 +309,31 @@ DROP USER 'username'@'localhost';
 
 Guide: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
 
+##### Remove Mysql
+
+```
+sudo apt-get remove --purge mysql*
+```
+
+##### Install mysql with specific version
+```
+ wget https://downloads.mysql.com/archives/get/p/23/file/mysql-server_5.6.33-1ubuntu14.04_amd64.deb-bundle.tar
+ tar xvf mysql-server_5.6.33-1ubuntu14.04_amd64.deb-bundle.tar
+ dpkg -i *.deb				
+ apt --fix-broken install				
+ vim /etc/mysql/my.cnf				
+ /etc/init.d/mysql restart  OR  service mysql restart				
+ mysqldump-u${DBUSER} -p${DBPASSWORD} --no-create-info --create-options --single-transaction --quick --lock-tables=false ${TARGETDB} | gzip > ${TARGETDB}.sql.gz				
+ 
+ 
+ "mysql> CHANGE MASTER TO MASTER_HOST='192.168.x.x', MASTER_USER='user', MASTER_PASSWORD='xxxxx', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=${POS};
+mysql> START SLAVE;
+mysql> SHOW SLAVE STATUS\G"				
+
+
+/etc/init.d/mysql restart  OR  service mysql restart				
+```
+
 #### Setup Elastic search
 
 Install elastic search:
