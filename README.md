@@ -313,6 +313,9 @@ Guide: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user
 
 ```
 sudo apt-get remove --purge mysql*
+sudo apt autoremove 
+sudo rm /etc/init.d/mysql
+sudo systemctl daemon-reload 
 ```
 
 ##### Install mysql with specific version
