@@ -39,3 +39,6 @@ cd utils && sudo ./install_server.sh
 ```
 redis-cli -p 6379 PING
 ```
+
+#### Setup redis to remote connection
+https://techmonger.github.io/71/remote-connection/
