@@ -1,9 +1,13 @@
 ### Reference
 socket 
+
 https://socket.io/
 
 socket.io-redis-adapter
+
 https://github.com/socketio/socket.io-redis-adapter
+
+https://redis.io/topics/pubsub
 
 ### Example
 Install:
