@@ -1,3 +1,5 @@
+Docker Compose is a Python application that you install on top of the Docker Engine
+
 #### up
 ```
 $ docker-compose up -d
