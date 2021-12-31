@@ -43,3 +43,23 @@ kubectl cluster-info
 
 ## Node
 Include kubelet, container runtime, kubeproxy
+
+Setup:
+
+Run above commands in a node
+
+Attach node to master kubernetes:
+
+```
+# Run command in master to create token:
+kubeadm token create --print-join-command
+
+# Copy result to node kubernetes
+```
+
+Verify node attach to master:
+
+Run in master:
+```
+kubectl get nodes
+```
