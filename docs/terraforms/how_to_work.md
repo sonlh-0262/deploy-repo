@@ -24,3 +24,5 @@ Responsiblitily of Provider Plugins:
 Responsiblitily of Provisioner Plugins:
 - Executing commands or scripts on the designated Resource after creation, or on destruction
 
+
+![alt text](https://github.com/sonlh-0262/deploy-repo/blob/master/docs/assets/Screenshot%20from%202022-01-01%2023-46-42.png)
