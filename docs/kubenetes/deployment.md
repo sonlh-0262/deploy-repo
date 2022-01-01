@@ -51,3 +51,6 @@ kubectl rollout resume
 kubectl rollout history
 ```
 
+#### Compare Deployment Strategy
+
+![alt text](https://github.com/sonlh-0262/deploy-repo/blob/master/docs/assets/Screenshot%20from%202022-01-01%2015-11-20.png)
