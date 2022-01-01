@@ -118,3 +118,33 @@ spec:
       maxSurge: 1
       maxUnavailable: 0
 ```
+
+Get History of revision
+```
+# Get histroy deployment
+kubectl rollout history deploy my-deploy
+
+# Custom history revision
+# Run after apply deploy
+kubectl annotate deployment.v1.apps/my-deploy kubernetes.io/change-cause="Move to the latest version."
+
+kubectl rollout history deploy my-deploy
+```
+
+Rollback 
+```
+kubectl rollout undo deploy my-deploy
+kubectl rollout status deploy my-deploy
+
+kubectl get rs -o=wide
+
+# Undo to a specific revision
+kubectl rollout undo deploy my-deploy --to-revision=1
+```
+
+### Delete deployment
+
+```
+kubectl delete deploy my-deploy
+kubectl get rc
+```
