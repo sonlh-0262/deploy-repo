@@ -54,3 +54,67 @@ kubectl rollout history
 #### Compare Deployment Strategy
 
 ![alt text](https://github.com/sonlh-0262/deploy-repo/blob/master/docs/assets/Screenshot%20from%202022-01-01%2015-11-20.png)
+
+
+### Reasons for Deployment Failures
+- Insufficient permissions
+- Application runtime misconfiguration
+- Image pull errors
+- Insufficient quota
+- Readiness probe failures
+
+
+### Deployment Manifest File
+
+```
+# deployment.yml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deploy
+  labels:
+    env: dev
+spec:
+  replicase: 3
+  selector:
+    matchLabels:
+      env: dev
+  template:
+    metadata:
+      labels:
+        env: dev
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+```
+
+Install
+
+```
+kubectl create -f deployment.yml
+
+kubectl get deploy my-deploy
+kubectl describe deploy my-deploy
+
+# Get ReplicaSet
+kubectl get rs my-deploy-123456
+
+# Update deployment
+kubectl apply -f deployment.yml
+```
+
+### Rolling Deployment
+
+```
+# Add in deployment.yml
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+```
