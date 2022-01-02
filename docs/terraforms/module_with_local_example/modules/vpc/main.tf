@@ -28,5 +28,18 @@ resource "aws_internet_gateway" "name" {
 # Route table: attach Internet Gateway
 resource "aws_route_table" "name" {
   vpc_id = aws_vpc.name.id
-  ....
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.name.id
+  }
+  tags = {
+    Name = var.aws_rt_name 
+  }  
+}
+
+# Route table association with public subnets
+resource "aws_route_table_association" "a" {
+  count = length(var.subnets_cidr)
+  subnet_id = element(aws_subnet.public.*.id, count.index)
+  route_table_id = aws_route_table.name.id
 }
