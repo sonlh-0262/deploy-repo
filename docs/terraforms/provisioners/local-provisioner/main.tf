@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.aws_region 
+}
+
 resource "aws_security_group" "allow_tls_ssh" {
   name = var.secGroupName
   description = var.secGroupDescription
