@@ -25,5 +25,27 @@ module "aws_application_listener" {
   aws_lb_listener_protocol = "HTTP"
   aws_lb_listener_df_action_type = "forward"
   aws_target_group_arn = module.aws_application_target_group.aws_target_group_arn
+}
+
+module "aws_frontend_listener_rule" {
+  source = "./modules/aws_lb_listener_rule"
+  aws_listener_arn = module.aws_application_listener.aws_lb_listener_arn
+  priority = 100
+  aws_listener_rule_type = "forward"
+  aws_target_group_arn = module.aws_application_target_group.aws_target_group_arn
   aws_listener_rule_values = ["/*"]
+}
+    
+module "aws_vm1_target_group_attachment" {
+  source = "./modules/aws_lb_target_group_attachment"
+  aws_target_group_arn = module.aws_application_target_group.aws_target_group_arn
+  target_instance_id = module.vm1_instance.instance_id
+  aws_lb_target_group_attachment_port = "80"
+}
+    
+module "aws_vm2_target_group_attachment" {
+  source = "./modules/aws_lb_target_group_attachment"
+  aws_target_group_arn = module.aws_application_target_group.aws_target_group_arn
+  target_instance_id = module.vm2_instance.instance_id
+  aws_lb_target_group_attachment_port = "80"
 }
