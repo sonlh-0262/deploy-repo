@@ -169,3 +169,153 @@ testObj["my side"]
 testObj[19]
 ```
 
+### Delete property in object
+
+```
+var testObj = {
+  "x": 1,
+  "y": 2
+}
+delete testObj.x
+```
+
+### Copy object
+
+```
+var testObj = {}
+
+copyObj = JSON.parse(JSON.stringify(testObj));
+```
+
+### const vs let vs var
+const and let is from ES2015
+
+- `var`: can has affect in outer block, can allow duplicate declare variable
+- `let`: can set value , can not allow duplicate declare variable, and has limit in scope, can not affect in outer block 
+- `const`: all feature of let and read only
+
+### Prevent object mutation
+
+```
+const MATH_CONSTANT = { PI: 3.14 }
+Object.freeze(MATH_CONSTANT)
+```
+
+### anonymous function
+
+is function without name
+
+```
+var anonymous = function() {
+  return new Date();
+}
+```
+
+`Arrow function`:
+```
+var magic = () => {
+  return new Date();
+}
+var magic = () => new Date();
+```
+
+### Higher Order Arrow Function
+map, filter
+
+```
+# default argument
+const increment = (function () {
+  return function increment(number, value = 1) {
+    return number + value;
+  };
+})();
+
+increment(5, 2);
+increment(5);
+
+# Rest Operator
+convert all number ...args to array args
+function sum(...args) {
+  console.log(args) => array
+}
+
+# Spread Operator
+can use to copy object / array
+arr2 = [...arr1] // arr2 is equal all content arr1
+
+# Destructing Assignment
+const obj = { x: 1, y: 2, z: 3 }
+const { x: a, y: b, z: c } = obj;
+=> a = 1, b = 2, c = 3
+
+# String Literals:
+const abc = `hello ${var}`
+
+# Simple fields
+const createPerson = (name, age, gender) => ({ name, age, gender });
+same as 
+return {
+  name: name,
+  age: age,
+  gender: gender
+}
+
+# Write concise declarative function
+const bicycle = {
+  gear: 2,
+  setGear: function(newGear) {
+    this.gear = newGear;
+  }
+}
+=> 
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+}
+```
+
+### Class and object
+
+```
+class Hello {
+  constructor(newValue) {
+    this.value = newValue;
+  }
+}
+
+or
+
+var Hello = function(newValue) {
+  this.value = newValue;
+}
+var hello = new Hello();
+hello.value
+```
+
+### Difference import and export file
+
+```
+# function.js
+export const myFunction = do something;
+
+# index.js
+import { myFunction } from "./function";
+
+const hello = myFunction();
+
+# syntax
+const myFunction = do something;
+export { myFunction }
+export const var1 = 1;
+
+# import all from file
+import * as object from "./file"
+
+# default export
+export default function adding(){ return 1 }
+
+# default import
+import adding from "./file"
+```
