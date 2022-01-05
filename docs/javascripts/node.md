@@ -319,3 +319,97 @@ export default function adding(){ return 1 }
 # default import
 import adding from "./file"
 ```
+
+### Event JS
+
+```
+# addEventListener
+element.addEventListener(event_name, function, useCapture);
+
+# removeEventListener
+element.removeEventListener(event_name, function, useCapture);
+```
+
+### Element node:
+
+- `window.getComputedStyle(element)`
+- root node (document)
+- root element (html)
+- `createElement()`
+- `appendChild()`
+- `insertBefore()`
+- `replaceChild()`
+- `removeChild()`
+
+### polifill
+
+### Animation
+
+- `setInterval` | `clearInterval`
+
+```
+function myMove() {
+  var element = document.getElementById("id");
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      element.style.top = pos + 'px';
+      element.style.left = pos + 'px';
+    }
+  }
+}
+```
+
+### `window` object
+
+- support by all browser
+- all element, variable, function global is member of `window` object, even document
+ex: `document` global is implied by `window.document`
+
+```
+window.innerWidth
+window.innerHeight
+window.addEventListener(event, handler);
+window.open("http://google.com");
+```
+
+### popup box js
+
+all is part of window object
+```
+alert("alert thing")
+
+confirm("confirm") => return boolean
+
+prompt("message", "default text input")
+```
+
+### data storage
+
+|  | Cookies | Local Storage | Session Storage |
+|--|---------|---------------|-----------------|
+| Capacity | 4kb | 10MB | 5 MB|
+| Browsers | HTML4 / HTML5 | HTML5 | HTML5 |
+| Accessible from | Any window | Any window | Same tab |
+| Expires | Manually set | Never | On tab close |
+| Storage Location | Browser and server | Browser only | Browser only |
+| Sent with requests | Yes | No | No |
+
+```
+localStorage.setItem("key", "value");
+localStorage.getItem("key")
+localStorage.removeItem("key")
+localStorage.clear()
+
+sessionStorage.setItem("key", "value");
+sessionStorage.getItem("key")
+
+document.cookie = "key=value; expires=; path=/;";
+# delete cookie
+document.cookie = "key=;"
+```
