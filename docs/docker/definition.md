@@ -1,3 +1,7 @@
+### Container
+
+Lightweight sandbox running software
+
 ### Docker Architecture
 
 - `Docker Engine`: main component of docker and serve as a client-server application
@@ -41,4 +45,10 @@ If all this sounds quite complicated, just remember that whenever you need a lon
 ```
 docker run [OPTIONS] images command
 docker run --rm -it -v ${PWD}:/usr/src/app ruby:2.7 bash
+```
+
+#### Run with compound command 
+
+```
+docker run <options> [image:version] bash -c "command1 && command2 && command3 ..."
 ```
