@@ -51,6 +51,22 @@ sudo apt-get update -y
 sudo apt-get install -y
 ```
 
+Setup basic authen
+
+```
+sudo apt-get install apache2-utils
+sudo htpasswd -c /etc/nginx/.htpasswd user
+
+# Add in nginx conf
+auth_basic "Restricted Content";
+auth_basic_user_file /etc/nginx/.htpasswd;
+
+# Restart nginx service
+sudo service nginx restart
+or
+nginx -s reload (in nginx container)
+```
+
 #### Clone repo deploy
 ```
 cd
