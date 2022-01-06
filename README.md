@@ -61,6 +61,15 @@ sudo htpasswd -c /etc/nginx/.htpasswd user
 auth_basic "Restricted Content";
 auth_basic_user_file /etc/nginx/.htpasswd;
 
+root /usr/share/nginx/html;
+index index.html index.htm;
+
+location /api-doc {
+  auth_basic "Restricted Content";
+  auth_basic_user_file /etc/nginx/.htpasswd;
+  try_files $uri $uri/ =404;
+}
+
 # Restart nginx service
 sudo service nginx restart
 or
