@@ -40,3 +40,26 @@ rails about
 ```
 rails notes
 ```
+
+### Run command with environment
+
+```
+rails s -e production
+rails c -e production
+rails c --sandbox
+```
+
+### Go to db
+```
+rails dbconsole
+rails db
+```
+
+### Special commands
+
+```
+rails initializers
+rails stats
+rails middleware
+rails time:zones:all
+```
