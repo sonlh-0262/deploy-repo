@@ -28,3 +28,15 @@ end
 
 rails app:stats
 ```
+
+### Rails information
+
+```
+rails about
+```
+
+### List all TODO comment
+
+```
+rails notes
+```
