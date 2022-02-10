@@ -7,3 +7,5 @@ interacts with a web IdP, such as Facebook, and then calls the AssumeRoleWithWeb
 use Amazon Cognito
 
 IdP
+
+identity provider (IdP), such as Login with Amazon, Facebook, Google, or any OpenID Connect (OIDC)-compatible IdP
