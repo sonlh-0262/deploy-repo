@@ -13,3 +13,9 @@ FROM mysql.innodb_index_stats
 WHERE stat_name = 'size' AND index_name != 'PRIMARY'
 ORDER BY size_in_mb DESC;
 ```
+
+### Show table status:
+
+```
+show table status from [dbname]
+```
