@@ -14,6 +14,7 @@
   - [Puma local](#puma-local)
   - [Loadbalancer](#loadbalancer)
   - [Compress and uncompress](#compress-and-uncompress)
+  - [Other documents](https://github.com/sonlh-0262/deploy-repo/tree/master/docs)
 
 # README
 
