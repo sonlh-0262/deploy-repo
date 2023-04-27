@@ -437,6 +437,11 @@ sudo gpasswd -a username docker
 sudo service docker restart 
 ```
 
+Get size of docker in system:
+```
+docker system df -v
+```
+
 #### Puma local
 Setup puma using in local folder:
 ```
